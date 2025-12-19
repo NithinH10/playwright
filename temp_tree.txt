@@ -1,0 +1,3737 @@
+﻿Folder PATH listing for volume New Volume
+Volume serial number is 968A-8932
+D:.
+|   .editorconfig
+|   .gitattributes
+|   .gitignore
+|   CODE_OF_CONDUCT.md
+|   CONTRIBUTING.md
+|   eslint.config.mjs
+|   FILING_ISSUES.md
+|   LICENSE
+|   NOTICE
+|   package-lock.json
+|   package.json
+|   README.md
+|   SECURITY.md
+|   SUPPORT.md
+|   temp_tree.txt
+|   tsconfig.json
+|   
++---.github
+|   |   dependabot.yml
+|   |   
+|   +---actions
+|   |   +---download-artifact
+|   |   |       action.yml
+|   |   |       
+|   |   +---enable-microphone-access
+|   |   |       action.yml
+|   |   |       
+|   |   +---run-test
+|   |   |       action.yml
+|   |   |       
+|   |   \---upload-blob-report
+|   |           action.yml
+|   |           
+|   +---ISSUE_TEMPLATE
+|   |       bug.yml
+|   |       config.yml
+|   |       documentation.yml
+|   |       feature.yml
+|   |       question.yml
+|   |       regression.yml
+|   |       
+|   \---workflows
+|           cherry_pick_into_release_branch.yml
+|           copilot-setup-steps.yml
+|           create_test_report.yml
+|           infra.yml
+|           merge.config.ts
+|           pr_check_client_side_changes.yml
+|           publish_release.yml
+|           publish_release_docker.yml
+|           roll_browser_into_playwright.yml
+|           roll_nodejs.yml
+|           roll_stable_test_runner.yml
+|           tests_bidi.yml
+|           tests_components.yml
+|           tests_mcp.yml
+|           tests_others.yml
+|           tests_primary.yml
+|           tests_secondary.yml
+|           tests_video.yml
+|           trigger_tests.yml
+|           
++---browser_patches
+|   |   roll_from_upstream.sh
+|   |   
+|   +---firefox
+|   |   |   .gitignore
+|   |   |   UPSTREAM_CONFIG.sh
+|   |   |   
+|   |   +---juggler
+|   |   |   |   ChannelEventSink.sys.mjs
+|   |   |   |   Helper.js
+|   |   |   |   jar.mn
+|   |   |   |   JugglerFrameParent.jsm
+|   |   |   |   moz.build
+|   |   |   |   NetworkObserver.js
+|   |   |   |   SimpleChannel.js
+|   |   |   |   TargetRegistry.js
+|   |   |   |   
+|   |   |   +---components
+|   |   |   |       components.conf
+|   |   |   |       Juggler.js
+|   |   |   |       moz.build
+|   |   |   |       
+|   |   |   +---content
+|   |   |   |       FrameTree.js
+|   |   |   |       hidden-scrollbars.css
+|   |   |   |       JugglerFrameChild.jsm
+|   |   |   |       main.js
+|   |   |   |       PageAgent.js
+|   |   |   |       Runtime.js
+|   |   |   |       WorkerMain.js
+|   |   |   |       
+|   |   |   +---pipe
+|   |   |   |       components.conf
+|   |   |   |       moz.build
+|   |   |   |       nsIRemoteDebuggingPipe.idl
+|   |   |   |       nsRemoteDebuggingPipe.cpp
+|   |   |   |       nsRemoteDebuggingPipe.h
+|   |   |   |       
+|   |   |   +---protocol
+|   |   |   |       BrowserHandler.js
+|   |   |   |       Dispatcher.js
+|   |   |   |       PageHandler.js
+|   |   |   |       PrimitiveTypes.js
+|   |   |   |       Protocol.js
+|   |   |   |       
+|   |   |   \---screencast
+|   |   |           components.conf
+|   |   |           HeadlessWindowCapturer.cpp
+|   |   |           HeadlessWindowCapturer.h
+|   |   |           moz.build
+|   |   |           nsIScreencastService.idl
+|   |   |           nsScreencastService.cpp
+|   |   |           nsScreencastService.h
+|   |   |           ScreencastEncoder.cpp
+|   |   |           ScreencastEncoder.h
+|   |   |           WebMFileWriter.cpp
+|   |   |           WebMFileWriter.h
+|   |   |           
+|   |   +---patches
+|   |   |       bootstrap.diff
+|   |   |       
+|   |   \---preferences
+|   |           00-playwright-prefs.js
+|   |           playwright.cfg
+|   |           
+|   +---webkit
+|   |   |   .gitignore
+|   |   |   pw_run.sh
+|   |   |   UPSTREAM_CONFIG.sh
+|   |   |   
+|   |   +---embedder
+|   |   |   \---Playwright
+|   |   |       |   Makefile
+|   |   |       |   MBToolbarItem.h
+|   |   |       |   MBToolbarItem.m
+|   |   |       |   
+|   |   |       +---Configurations
+|   |   |       |       Base.xcconfig
+|   |   |       |       DebugRelease.xcconfig
+|   |   |       |       Playwright.xcconfig
+|   |   |       |       SDKVariant.xcconfig
+|   |   |       |       
+|   |   |       +---Images.xcassets
+|   |   |       |   |   Contents.json
+|   |   |       |   |   
+|   |   |       |   \---AppIcon.appiconset
+|   |   |       |           Contents.json
+|   |   |       |           logo-1024.png
+|   |   |       |           logo-128.png
+|   |   |       |           logo-16.png
+|   |   |       |           logo-256.png
+|   |   |       |           logo-257.png
+|   |   |       |           logo-32.png
+|   |   |       |           logo-33.png
+|   |   |       |           logo-512.png
+|   |   |       |           logo-513.png
+|   |   |       |           logo-64.png
+|   |   |       |           
+|   |   |       +---mac
+|   |   |       |       AppDelegate.h
+|   |   |       |       AppDelegate.m
+|   |   |       |       BrowserWindow.xib
+|   |   |       |       BrowserWindowController.h
+|   |   |       |       BrowserWindowController.m
+|   |   |       |       CMakeLists.txt
+|   |   |       |       Info.plist
+|   |   |       |       main.m
+|   |   |       |       MainMenu.xib
+|   |   |       |       Playwright_Prefix.pch
+|   |   |       |       
+|   |   |       +---Playwright.xcodeproj
+|   |   |       |   |   project.pbxproj
+|   |   |       |   |   
+|   |   |       |   \---xcshareddata
+|   |   |       |       \---xcschemes
+|   |   |       |               Playwright.xcscheme
+|   |   |       |               
+|   |   |       \---win
+|   |   |               CMakeLists.txt
+|   |   |               Common.cpp
+|   |   |               Common.h
+|   |   |               DialogHelper.h
+|   |   |               MainWindow.cpp
+|   |   |               MainWindow.h
+|   |   |               Playwright.ico
+|   |   |               PlaywrightLib.rc
+|   |   |               PlaywrightLibResource.h
+|   |   |               PlaywrightReplace.h
+|   |   |               PlaywrightResource.h
+|   |   |               resource.h
+|   |   |               stdafx.cpp
+|   |   |               stdafx.h
+|   |   |               toolbar.bmp
+|   |   |               WebKitBrowserWindow.cpp
+|   |   |               WebKitBrowserWindow.h
+|   |   |               WinMain.cpp
+|   |   |               
+|   |   \---patches
+|   |           bootstrap.diff
+|   |           
+|   \---winldd
+|           .gitignore
+|           archive.sh
+|           build.sh
+|           buildwin.bat
+|           BUILD_NUMBER
+|           clean.sh
+|           EXPECTED_BUILDS
+|           PrintDeps.cpp
+|           PrintDeps.sln
+|           PrintDeps.vcxproj
+|           PrintDeps.vcxproj.filters
+|           PrintDeps.vcxproj.user
+|           README.md
+|           
++---docs
+|   \---src
+|       |   accessibility-testing-java.md
+|       |   accessibility-testing-js.md
+|       |   actionability.md
+|       |   api-testing-csharp.md
+|       |   api-testing-java.md
+|       |   api-testing-js.md
+|       |   api-testing-python.md
+|       |   aria-snapshots.md
+|       |   auth.md
+|       |   best-practices-js.md
+|       |   browser-contexts.md
+|       |   browsers.md
+|       |   canary-releases-js.md
+|       |   chrome-extensions-js-python.md
+|       |   ci-intro.md
+|       |   ci.md
+|       |   clock.md
+|       |   codegen-intro.md
+|       |   codegen.md
+|       |   debug.md
+|       |   dialogs.md
+|       |   docker.md
+|       |   downloads.md
+|       |   emulation.md
+|       |   evaluating.md
+|       |   events.md
+|       |   extensibility.md
+|       |   frames.md
+|       |   getting-started-vscode-js.md
+|       |   handles.md
+|       |   input.md
+|       |   intro-csharp.md
+|       |   intro-java.md
+|       |   intro-js.md
+|       |   intro-python.md
+|       |   junit-java.md
+|       |   languages.md
+|       |   library-csharp.md
+|       |   library-js.md
+|       |   library-python.md
+|       |   locators.md
+|       |   mock-browser-js.md
+|       |   mock.md
+|       |   navigations.md
+|       |   network.md
+|       |   other-locators.md
+|       |   pages.md
+|       |   pom.md
+|       |   protractor-js.md
+|       |   puppeteer-js.md
+|       |   release-notes-csharp.md
+|       |   release-notes-java.md
+|       |   release-notes-js.md
+|       |   release-notes-python.md
+|       |   running-tests-csharp.md
+|       |   running-tests-java.md
+|       |   running-tests-js.md
+|       |   running-tests-python.md
+|       |   screenshots.md
+|       |   selenium-grid.md
+|       |   service-workers-js-python.md
+|       |   test-agents-js.md
+|       |   test-annotations-js.md
+|       |   test-assertions-csharp-java-python.md
+|       |   test-assertions-js.md
+|       |   test-cli-js.md
+|       |   test-components-js.md
+|       |   test-configuration-js.md
+|       |   test-fixtures-js.md
+|       |   test-global-setup-teardown-js.md
+|       |   test-parallel-js.md
+|       |   test-parameterize-js.md
+|       |   test-projects-js.md
+|       |   test-reporters-js.md
+|       |   test-retries-js.md
+|       |   test-runners-csharp.md
+|       |   test-runners-java.md
+|       |   test-runners-python.md
+|       |   test-sharding-js.md
+|       |   test-snapshots-js.md
+|       |   test-timeouts-js.md
+|       |   test-typescript-js.md
+|       |   test-ui-mode-js.md
+|       |   test-use-options-js.md
+|       |   test-webserver-js.md
+|       |   testing-library-js.md
+|       |   threading-java.md
+|       |   touch-events.md
+|       |   trace-viewer-intro-csharp.md
+|       |   trace-viewer-intro-java-python.md
+|       |   trace-viewer-intro-js.md
+|       |   trace-viewer.md
+|       |   videos.md
+|       |   webview2.md
+|       |   writing-tests-csharp.md
+|       |   writing-tests-java.md
+|       |   writing-tests-js.md
+|       |   writing-tests-python.md
+|       |   
+|       +---api
+|       |       class-android.md
+|       |       class-androiddevice.md
+|       |       class-androidinput.md
+|       |       class-androidsocket.md
+|       |       class-androidwebview.md
+|       |       class-apirequest.md
+|       |       class-apirequestcontext.md
+|       |       class-apiresponse.md
+|       |       class-apiresponseassertions.md
+|       |       class-browser.md
+|       |       class-browsercontext.md
+|       |       class-browserserver.md
+|       |       class-browsertype.md
+|       |       class-cdpsession.md
+|       |       class-cdpsessionevent.md
+|       |       class-clock.md
+|       |       class-consolemessage.md
+|       |       class-coverage.md
+|       |       class-dialog.md
+|       |       class-download.md
+|       |       class-electron.md
+|       |       class-electronapplication.md
+|       |       class-elementhandle.md
+|       |       class-error.md
+|       |       class-filechooser.md
+|       |       class-formdata.md
+|       |       class-frame.md
+|       |       class-framelocator.md
+|       |       class-genericassertions.md
+|       |       class-jshandle.md
+|       |       class-keyboard.md
+|       |       class-locator.md
+|       |       class-locatorassertions.md
+|       |       class-logger.md
+|       |       class-mouse.md
+|       |       class-page.md
+|       |       class-pageassertions.md
+|       |       class-playwright.md
+|       |       class-playwrightassertions.md
+|       |       class-playwrightexception.md
+|       |       class-request.md
+|       |       class-requestoptions.md
+|       |       class-response.md
+|       |       class-route.md
+|       |       class-selectors.md
+|       |       class-snapshotassertions.md
+|       |       class-timeouterror.md
+|       |       class-touchscreen.md
+|       |       class-tracing.md
+|       |       class-video.md
+|       |       class-weberror.md
+|       |       class-websocket.md
+|       |       class-websocketframe.md
+|       |       class-websocketroute.md
+|       |       class-worker.md
+|       |       params.md
+|       |       
+|       +---images
+|       |   |   cft-logo-change.png
+|       |   |   speedboard.png
+|       |   |   vscode-projects-section.png
+|       |   |   
+|       |   +---getting-started
+|       |   |       codegen-csharp.png
+|       |   |       codegen-java.png
+|       |   |       codgen-js.png
+|       |   |       codgen-python.png
+|       |   |       debug-mode.png
+|       |   |       error-messaging.png
+|       |   |       fix-with-ai.png
+|       |   |       global-setup.png
+|       |   |       html-report-basic.png
+|       |   |       html-report-detail.png
+|       |   |       html-report-failed-tests.png
+|       |   |       html-report-open.png
+|       |   |       html-report-trace.png
+|       |   |       html-report.png
+|       |   |       install-browsers.png
+|       |   |       install-playwright.png
+|       |   |       live-debugging.png
+|       |   |       pick-locator-csharp.png
+|       |   |       pick-locator-java.png
+|       |   |       pick-locator-js.png
+|       |   |       pick-locator-python.png
+|       |   |       pick-locator.png
+|       |   |       record-at-cursor.png
+|       |   |       record-new-test.png
+|       |   |       record-test-csharp.png
+|       |   |       record-test-java.png
+|       |   |       record-test-js.png
+|       |   |       record-test-python.png
+|       |   |       run-all-tests.png
+|       |   |       run-single-test.png
+|       |   |       run-tests-cli.png
+|       |   |       run-tests-debug.png
+|       |   |       run-tests-pick-locator.png
+|       |   |       select-projects.png
+|       |   |       selecting-configuration.png
+|       |   |       setup-tests.png
+|       |   |       show-browser.png
+|       |   |       testing-sidebar.png
+|       |   |       trace-viewer-debug.png
+|       |   |       trace-viewer-failed-test.png
+|       |   |       trace-viewer.png
+|       |   |       ui-mode-error.png
+|       |   |       ui-mode-pick-locator.png
+|       |   |       ui-mode.png
+|       |   |       vscode-extension.png
+|       |   |       
+|       |   \---test-agents
+|       |           generator-prompt.png
+|       |           healer-prompt.png
+|       |           planner-prompt.png
+|       |           
+|       +---test-api
+|       |       class-fixtures.md
+|       |       class-fullconfig.md
+|       |       class-fullproject.md
+|       |       class-location.md
+|       |       class-test.md
+|       |       class-testconfig.md
+|       |       class-testinfo.md
+|       |       class-testinfoerror.md
+|       |       class-testoptions.md
+|       |       class-testproject.md
+|       |       class-teststepinfo.md
+|       |       class-workerinfo.md
+|       |       
+|       \---test-reporter-api
+|               class-reporter.md
+|               class-suite.md
+|               class-testcase.md
+|               class-testerror.md
+|               class-testresult.md
+|               class-teststep.md
+|               
++---examples
+|   +---github-api
+|   |   |   .gitignore
+|   |   |   package.json
+|   |   |   playwright.config.ts
+|   |   |   
+|   |   \---tests
+|   |           test-api.spec.ts
+|   |           
+|   +---mock-battery
+|   |   |   package.json
+|   |   |   playwright.config.js
+|   |   |   
+|   |   +---demo-battery-api
+|   |   |   |   index.html
+|   |   |   |   LICENSE
+|   |   |   |   README.md
+|   |   |   |   
+|   |   |   \---src
+|   |   |           bolt.png
+|   |   |           index.js
+|   |   |           styles.css
+|   |   |           
+|   |   \---tests
+|   |           show-battery-status.spec.js
+|   |           update-battery-status.spec.js
+|   |           verify-calls.spec.js
+|   |           
+|   +---mock-filesystem
+|   |   |   package.json
+|   |   |   playwright.config.js
+|   |   |   
+|   |   +---src
+|   |   |       file-picker.html
+|   |   |       ls-dir.html
+|   |   |       
+|   |   \---tests
+|   |           directory-reader.spec.js
+|   |           file-reader.spec.js
+|   |           
+|   +---svgomg
+|   |   |   .gitignore
+|   |   |   package.json
+|   |   |   playwright.config.ts
+|   |   |   
+|   |   \---tests
+|   |           example.spec.ts
+|   |           
+|   \---todomvc
+|       |   .gitignore
+|       |   .mcp.json
+|       |   package.json
+|       |   playwright.config.ts
+|       |   
+|       +---.claude
+|       |   +---agents
+|       |   |       playwright-test-generator.md
+|       |   |       playwright-test-healer.md
+|       |   |       playwright-test-planner.md
+|       |   |       
+|       |   \---prompts
+|       |           playwright-test-coverage.md
+|       |           playwright-test-generate.md
+|       |           playwright-test-heal.md
+|       |           playwright-test-plan.md
+|       |           
+|       +---.github
+|       |   +---agents
+|       |   |       playwright-test-generator.agent.md
+|       |   |       playwright-test-healer.agent.md
+|       |   |       playwright-test-planner.agent.md
+|       |   |       
+|       |   +---prompts
+|       |   |       playwright-test-coverage.prompt.md
+|       |   |       playwright-test-generate.prompt.md
+|       |   |       playwright-test-heal.prompt.md
+|       |   |       playwright-test-plan.prompt.md
+|       |   |       
+|       |   \---workflows
+|       |           copilot-setup-steps.yml
+|       |           
+|       +---.vscode
+|       |       mcp.json
+|       |       
+|       +---specs
+|       |       basic-operations.plan.md
+|       |       
+|       \---tests
+|           |   fixtures.ts
+|           |   seed.spec.ts
+|           |   
+|           +---adding-new-todos
+|           |       add-multiple-todos.spec.ts
+|           |       add-single-valid-todo.spec.ts
+|           |       add-todo-with-long-text.spec.ts
+|           |       add-todo-with-special-characters.spec.ts
+|           |       reject-empty-todo.spec.ts
+|           |       reject-whitespace-only-todo.spec.ts
+|           |       
+|           +---completing-todos
+|           |       complete-multiple-todos.spec.ts
+|           |       complete-single-todo.spec.ts
+|           |       mark-all-as-complete.spec.ts
+|           |       uncomplete-todo.spec.ts
+|           |       unmark-all-as-complete.spec.ts
+|           |       
+|           \---editing-todos
+|                   cancel-edit-with-escape.spec.ts
+|                   delete-todo-by-clearing-text.spec.ts
+|                   edit-completed-todo.spec.ts
+|                   edit-todo-successfully.spec.ts
+|                   
++---packages
+|   +---html-reporter
+|   |   |   .gitignore
+|   |   |   bundle.ts
+|   |   |   index.html
+|   |   |   package.json
+|   |   |   tsconfig.json
+|   |   |   tsconfig.node.json
+|   |   |   vite.config.ts
+|   |   |   
+|   |   \---src
+|   |           chip.css
+|   |           chip.tsx
+|   |           colors.css
+|   |           common.css
+|   |           copyToClipboard.css
+|   |           copyToClipboard.tsx
+|   |           DEPS.list
+|   |           expandable.css
+|   |           expandable.tsx
+|   |           filter.ts
+|   |           headerView.css
+|   |           headerView.tsx
+|   |           icons.tsx
+|   |           images.ts
+|   |           index.tsx
+|   |           labels.css
+|   |           labels.tsx
+|   |           links.css
+|   |           links.tsx
+|   |           loadedReport.ts
+|   |           metadataView.css
+|   |           metadataView.tsx
+|   |           reportView.css
+|   |           reportView.tsx
+|   |           speedboard.tsx
+|   |           statusIcon.tsx
+|   |           tabbedPane.css
+|   |           tabbedPane.tsx
+|   |           testCaseView.css
+|   |           testCaseView.tsx
+|   |           testErrorView.css
+|   |           testErrorView.tsx
+|   |           testFilesView.tsx
+|   |           testFileView.css
+|   |           testFileView.tsx
+|   |           testResultView.css
+|   |           testResultView.tsx
+|   |           theme.css
+|   |           treeItem.css
+|   |           treeItem.tsx
+|   |           types.d.ts
+|   |           utils.ts
+|   |           vite-env.d.ts
+|   |           
+|   +---injected
+|   |   \---src
+|   |       |   ariaSnapshot.ts
+|   |       |   bindingsController.ts
+|   |       |   clock.ts
+|   |       |   consoleApi.ts
+|   |       |   DEPS.list
+|   |       |   domUtils.ts
+|   |       |   highlight.css
+|   |       |   highlight.ts
+|   |       |   injectedScript.ts
+|   |       |   layoutSelectorUtils.ts
+|   |       |   reactSelectorEngine.ts
+|   |       |   README.md
+|   |       |   roleSelectorEngine.ts
+|   |       |   roleUtils.ts
+|   |       |   selectorEngine.ts
+|   |       |   selectorEvaluator.ts
+|   |       |   selectorGenerator.ts
+|   |       |   selectorUtils.ts
+|   |       |   storageScript.ts
+|   |       |   utilityScript.ts
+|   |       |   vueSelectorEngine.ts
+|   |       |   webSocketMock.ts
+|   |       |   xpathSelectorEngine.ts
+|   |       |   yaml.ts
+|   |       |   
+|   |       \---recorder
+|   |           |   clipPaths.ts
+|   |           |   DEPS.list
+|   |           |   pollingRecorder.ts
+|   |           |   recorder.ts
+|   |           |   
+|   |           \---icons
+|   |                   check.svg
+|   |                   circle-large-filled.svg
+|   |                   close.svg
+|   |                   eye.svg
+|   |                   gist.svg
+|   |                   gripper.svg
+|   |                   inspect.svg
+|   |                   pass.svg
+|   |                   stop-circle.svg
+|   |                   symbol-constant.svg
+|   |                   whole-word.svg
+|   |                   
+|   +---playwright
+|   |   |   .npmignore
+|   |   |   cli.js
+|   |   |   index.d.ts
+|   |   |   index.js
+|   |   |   index.mjs
+|   |   |   jsx-runtime.js
+|   |   |   jsx-runtime.mjs
+|   |   |   package.json
+|   |   |   test.d.ts
+|   |   |   test.js
+|   |   |   test.mjs
+|   |   |   ThirdPartyNotices.txt
+|   |   |   
+|   |   +---bundles
+|   |   |   +---babel
+|   |   |   |   |   package-lock.json
+|   |   |   |   |   package.json
+|   |   |   |   |   roll.js
+|   |   |   |   |   
+|   |   |   |   \---src
+|   |   |   |           babelBundleImpl.ts
+|   |   |   |           
+|   |   |   +---expect
+|   |   |   |   |   package-lock.json
+|   |   |   |   |   package.json
+|   |   |   |   |   
+|   |   |   |   \---src
+|   |   |   |           expectBundleImpl.ts
+|   |   |   |           
+|   |   |   \---utils
+|   |   |       |   package-lock.json
+|   |   |       |   package.json
+|   |   |       |   
+|   |   |       \---src
+|   |   |               utilsBundleImpl.ts
+|   |   |               
+|   |   +---src
+|   |   |   |   DEPS.list
+|   |   |   |   fsWatcher.ts
+|   |   |   |   index.ts
+|   |   |   |   internalsForTest.ts
+|   |   |   |   program.ts
+|   |   |   |   util.ts
+|   |   |   |   utilsBundle.ts
+|   |   |   |   
+|   |   |   +---agents
+|   |   |   |       agent.ts
+|   |   |   |       agentParser.ts
+|   |   |   |       copilot-setup-steps.yml
+|   |   |   |       DEPS.list
+|   |   |   |       generateAgents.ts
+|   |   |   |       playwright-test-coverage.prompt.md
+|   |   |   |       playwright-test-generate.prompt.md
+|   |   |   |       playwright-test-generator.agent.md
+|   |   |   |       playwright-test-heal.prompt.md
+|   |   |   |       playwright-test-healer.agent.md
+|   |   |   |       playwright-test-plan.prompt.md
+|   |   |   |       playwright-test-planner.agent.md
+|   |   |   |       
+|   |   |   +---common
+|   |   |   |       config.ts
+|   |   |   |       configLoader.ts
+|   |   |   |       DEPS.list
+|   |   |   |       esmLoaderHost.ts
+|   |   |   |       expectBundle.ts
+|   |   |   |       fixtures.ts
+|   |   |   |       globals.ts
+|   |   |   |       ipc.ts
+|   |   |   |       poolBuilder.ts
+|   |   |   |       process.ts
+|   |   |   |       suiteUtils.ts
+|   |   |   |       test.ts
+|   |   |   |       testLoader.ts
+|   |   |   |       testType.ts
+|   |   |   |       validators.ts
+|   |   |   |       
+|   |   |   +---isomorphic
+|   |   |   |       DEPS.list
+|   |   |   |       events.ts
+|   |   |   |       folders.ts
+|   |   |   |       stringInternPool.ts
+|   |   |   |       teleReceiver.ts
+|   |   |   |       teleSuiteUpdater.ts
+|   |   |   |       testServerConnection.ts
+|   |   |   |       testServerInterface.ts
+|   |   |   |       testTree.ts
+|   |   |   |       types.d.ts
+|   |   |   |       
+|   |   |   +---loader
+|   |   |   |       DEPS.list
+|   |   |   |       loaderMain.ts
+|   |   |   |       
+|   |   |   +---matchers
+|   |   |   |       DEPS.list
+|   |   |   |       expect.ts
+|   |   |   |       matcherHint.ts
+|   |   |   |       matchers.ts
+|   |   |   |       toBeTruthy.ts
+|   |   |   |       toEqual.ts
+|   |   |   |       toHaveURL.ts
+|   |   |   |       toMatchAriaSnapshot.ts
+|   |   |   |       toMatchSnapshot.ts
+|   |   |   |       toMatchText.ts
+|   |   |   |       
+|   |   |   +---mcp
+|   |   |   |   |   config.d.ts
+|   |   |   |   |   DEPS.list
+|   |   |   |   |   index.ts
+|   |   |   |   |   log.ts
+|   |   |   |   |   program.ts
+|   |   |   |   |   
+|   |   |   |   +---browser
+|   |   |   |   |   |   actions.d.ts
+|   |   |   |   |   |   browserContextFactory.ts
+|   |   |   |   |   |   browserServerBackend.ts
+|   |   |   |   |   |   codegen.ts
+|   |   |   |   |   |   config.ts
+|   |   |   |   |   |   context.ts
+|   |   |   |   |   |   DEPS.list
+|   |   |   |   |   |   response.ts
+|   |   |   |   |   |   sessionLog.ts
+|   |   |   |   |   |   tab.ts
+|   |   |   |   |   |   tools.ts
+|   |   |   |   |   |   watchdog.ts
+|   |   |   |   |   |   
+|   |   |   |   |   \---tools
+|   |   |   |   |           common.ts
+|   |   |   |   |           console.ts
+|   |   |   |   |           DEPS.list
+|   |   |   |   |           dialogs.ts
+|   |   |   |   |           evaluate.ts
+|   |   |   |   |           files.ts
+|   |   |   |   |           form.ts
+|   |   |   |   |           install.ts
+|   |   |   |   |           keyboard.ts
+|   |   |   |   |           mouse.ts
+|   |   |   |   |           navigate.ts
+|   |   |   |   |           network.ts
+|   |   |   |   |           pdf.ts
+|   |   |   |   |           runCode.ts
+|   |   |   |   |           screenshot.ts
+|   |   |   |   |           snapshot.ts
+|   |   |   |   |           tabs.ts
+|   |   |   |   |           tool.ts
+|   |   |   |   |           tracing.ts
+|   |   |   |   |           utils.ts
+|   |   |   |   |           verify.ts
+|   |   |   |   |           wait.ts
+|   |   |   |   |           
+|   |   |   |   +---extension
+|   |   |   |   |       cdpRelay.ts
+|   |   |   |   |       DEPS.list
+|   |   |   |   |       extensionContextFactory.ts
+|   |   |   |   |       protocol.ts
+|   |   |   |   |       
+|   |   |   |   +---sdk
+|   |   |   |   |       DEPS.list
+|   |   |   |   |       exports.ts
+|   |   |   |   |       http.ts
+|   |   |   |   |       inProcessTransport.ts
+|   |   |   |   |       proxyBackend.ts
+|   |   |   |   |       README.md
+|   |   |   |   |       server.ts
+|   |   |   |   |       tool.ts
+|   |   |   |   |       
+|   |   |   |   \---test
+|   |   |   |           browserBackend.ts
+|   |   |   |           DEPS.list
+|   |   |   |           generatorTools.ts
+|   |   |   |           plannerTools.ts
+|   |   |   |           seed.ts
+|   |   |   |           streams.ts
+|   |   |   |           testBackend.ts
+|   |   |   |           testContext.ts
+|   |   |   |           testTool.ts
+|   |   |   |           testTools.ts
+|   |   |   |           
+|   |   |   +---plugins
+|   |   |   |       DEPS.list
+|   |   |   |       gitCommitInfoPlugin.ts
+|   |   |   |       index.ts
+|   |   |   |       webServerPlugin.ts
+|   |   |   |       
+|   |   |   +---reporters
+|   |   |   |   |   base.ts
+|   |   |   |   |   blob.ts
+|   |   |   |   |   DEPS.list
+|   |   |   |   |   dot.ts
+|   |   |   |   |   empty.ts
+|   |   |   |   |   github.ts
+|   |   |   |   |   html.ts
+|   |   |   |   |   internalReporter.ts
+|   |   |   |   |   json.ts
+|   |   |   |   |   junit.ts
+|   |   |   |   |   line.ts
+|   |   |   |   |   list.ts
+|   |   |   |   |   listModeReporter.ts
+|   |   |   |   |   markdown.ts
+|   |   |   |   |   merge.ts
+|   |   |   |   |   multiplexer.ts
+|   |   |   |   |   reporterV2.ts
+|   |   |   |   |   teleEmitter.ts
+|   |   |   |   |   
+|   |   |   |   \---versions
+|   |   |   |           blobV1.ts
+|   |   |   |           
+|   |   |   +---runner
+|   |   |   |       DEPS.list
+|   |   |   |       dispatcher.ts
+|   |   |   |       failureTracker.ts
+|   |   |   |       lastRun.ts
+|   |   |   |       loaderHost.ts
+|   |   |   |       loadUtils.ts
+|   |   |   |       processHost.ts
+|   |   |   |       projectUtils.ts
+|   |   |   |       rebase.ts
+|   |   |   |       reporters.ts
+|   |   |   |       sigIntWatcher.ts
+|   |   |   |       storage.ts
+|   |   |   |       taskRunner.ts
+|   |   |   |       tasks.ts
+|   |   |   |       testGroups.ts
+|   |   |   |       testRunner.ts
+|   |   |   |       testServer.ts
+|   |   |   |       uiModeReporter.ts
+|   |   |   |       vcs.ts
+|   |   |   |       watchMode.ts
+|   |   |   |       workerHost.ts
+|   |   |   |       
+|   |   |   +---third_party
+|   |   |   |       pirates.ts
+|   |   |   |       tsconfig-loader.ts
+|   |   |   |       
+|   |   |   +---transform
+|   |   |   |       babelBundle.ts
+|   |   |   |       babelHighlightUtils.ts
+|   |   |   |       compilationCache.ts
+|   |   |   |       DEPS.list
+|   |   |   |       esmLoader.ts
+|   |   |   |       portTransport.ts
+|   |   |   |       transform.ts
+|   |   |   |       
+|   |   |   \---worker
+|   |   |           DEPS.list
+|   |   |           fixtureRunner.ts
+|   |   |           testInfo.ts
+|   |   |           testTracing.ts
+|   |   |           timeoutManager.ts
+|   |   |           util.ts
+|   |   |           workerMain.ts
+|   |   |           
+|   |   \---types
+|   |           test.d.ts
+|   |           testReporter.d.ts
+|   |           
+|   +---playwright-browser-chromium
+|   |       index.d.ts
+|   |       index.js
+|   |       index.mjs
+|   |       install.js
+|   |       package.json
+|   |       README.md
+|   |       
+|   +---playwright-browser-firefox
+|   |       index.d.ts
+|   |       index.js
+|   |       index.mjs
+|   |       install.js
+|   |       package.json
+|   |       README.md
+|   |       
+|   +---playwright-browser-webkit
+|   |       index.d.ts
+|   |       index.js
+|   |       index.mjs
+|   |       install.js
+|   |       package.json
+|   |       README.md
+|   |       
+|   +---playwright-chromium
+|   |       cli.js
+|   |       index.d.ts
+|   |       index.js
+|   |       index.mjs
+|   |       install.js
+|   |       package.json
+|   |       README.md
+|   |       
+|   +---playwright-client
+|   |   |   index.d.ts
+|   |   |   index.js
+|   |   |   index.mjs
+|   |   |   package.json
+|   |   |   
+|   |   +---src
+|   |   |       index.ts
+|   |   |       webPlatform.ts
+|   |   |       
+|   |   \---types
+|   |           types.d.ts
+|   |           
+|   +---playwright-core
+|   |   |   .npmignore
+|   |   |   browsers.json
+|   |   |   cli.js
+|   |   |   index.d.ts
+|   |   |   index.js
+|   |   |   index.mjs
+|   |   |   package.json
+|   |   |   README.md
+|   |   |   ThirdPartyNotices.txt
+|   |   |   
+|   |   +---bin
+|   |   |       install_media_pack.ps1
+|   |   |       install_webkit_wsl.ps1
+|   |   |       reinstall_chrome_beta_linux.sh
+|   |   |       reinstall_chrome_beta_mac.sh
+|   |   |       reinstall_chrome_beta_win.ps1
+|   |   |       reinstall_chrome_stable_linux.sh
+|   |   |       reinstall_chrome_stable_mac.sh
+|   |   |       reinstall_chrome_stable_win.ps1
+|   |   |       reinstall_msedge_beta_linux.sh
+|   |   |       reinstall_msedge_beta_mac.sh
+|   |   |       reinstall_msedge_beta_win.ps1
+|   |   |       reinstall_msedge_dev_linux.sh
+|   |   |       reinstall_msedge_dev_mac.sh
+|   |   |       reinstall_msedge_dev_win.ps1
+|   |   |       reinstall_msedge_stable_linux.sh
+|   |   |       reinstall_msedge_stable_mac.sh
+|   |   |       reinstall_msedge_stable_win.ps1
+|   |   |       
+|   |   +---bundles
+|   |   |   +---mcp
+|   |   |   |   |   package-lock.json
+|   |   |   |   |   package.json
+|   |   |   |   |   raw-body.ts
+|   |   |   |   |   
+|   |   |   |   \---src
+|   |   |   |           mcpBundleImpl.ts
+|   |   |   |           
+|   |   |   +---utils
+|   |   |   |   |   package-lock.json
+|   |   |   |   |   package.json
+|   |   |   |   |   
+|   |   |   |   \---src
+|   |   |   |       |   utilsBundleImpl.ts
+|   |   |   |       |   
+|   |   |   |       \---third_party
+|   |   |   |               lockfile.js
+|   |   |   |               
+|   |   |   \---zip
+|   |   |       |   package-lock.json
+|   |   |       |   package.json
+|   |   |       |   
+|   |   |       \---src
+|   |   |           |   zipBundleImpl.ts
+|   |   |           |   
+|   |   |           \---third_party
+|   |   |                   extract-zip.d.ts
+|   |   |                   extract-zip.js
+|   |   |                   
+|   |   +---src
+|   |   |   |   androidServerImpl.ts
+|   |   |   |   browserServerImpl.ts
+|   |   |   |   DEPS.list
+|   |   |   |   inprocess.ts
+|   |   |   |   inProcessFactory.ts
+|   |   |   |   mcpBundle.ts
+|   |   |   |   outofprocess.ts
+|   |   |   |   utils.ts
+|   |   |   |   utilsBundle.ts
+|   |   |   |   zipBundle.ts
+|   |   |   |   
+|   |   |   +---cli
+|   |   |   |       DEPS.list
+|   |   |   |       driver.ts
+|   |   |   |       program.ts
+|   |   |   |       programWithTestStub.ts
+|   |   |   |       
+|   |   |   +---client
+|   |   |   |       android.ts
+|   |   |   |       api.ts
+|   |   |   |       artifact.ts
+|   |   |   |       browser.ts
+|   |   |   |       browserContext.ts
+|   |   |   |       browserType.ts
+|   |   |   |       cdpSession.ts
+|   |   |   |       channelOwner.ts
+|   |   |   |       clientHelper.ts
+|   |   |   |       clientInstrumentation.ts
+|   |   |   |       clientStackTrace.ts
+|   |   |   |       clock.ts
+|   |   |   |       connection.ts
+|   |   |   |       consoleMessage.ts
+|   |   |   |       coverage.ts
+|   |   |   |       DEPS.list
+|   |   |   |       dialog.ts
+|   |   |   |       download.ts
+|   |   |   |       electron.ts
+|   |   |   |       elementHandle.ts
+|   |   |   |       errors.ts
+|   |   |   |       eventEmitter.ts
+|   |   |   |       events.ts
+|   |   |   |       fetch.ts
+|   |   |   |       fileChooser.ts
+|   |   |   |       fileUtils.ts
+|   |   |   |       frame.ts
+|   |   |   |       harRouter.ts
+|   |   |   |       input.ts
+|   |   |   |       jsHandle.ts
+|   |   |   |       jsonPipe.ts
+|   |   |   |       localUtils.ts
+|   |   |   |       locator.ts
+|   |   |   |       network.ts
+|   |   |   |       page.ts
+|   |   |   |       platform.ts
+|   |   |   |       playwright.ts
+|   |   |   |       selectors.ts
+|   |   |   |       stream.ts
+|   |   |   |       timeoutSettings.ts
+|   |   |   |       tracing.ts
+|   |   |   |       types.ts
+|   |   |   |       video.ts
+|   |   |   |       waiter.ts
+|   |   |   |       webError.ts
+|   |   |   |       webSocket.ts
+|   |   |   |       worker.ts
+|   |   |   |       writableStream.ts
+|   |   |   |       
+|   |   |   +---common
+|   |   |   |       DEPS.list
+|   |   |   |       
+|   |   |   +---protocol
+|   |   |   |       DEPS.list
+|   |   |   |       serializers.ts
+|   |   |   |       validator.ts
+|   |   |   |       validatorPrimitives.ts
+|   |   |   |       
+|   |   |   +---remote
+|   |   |   |       DEPS.list
+|   |   |   |       playwrightConnection.ts
+|   |   |   |       playwrightServer.ts
+|   |   |   |       
+|   |   |   +---server
+|   |   |   |   |   artifact.ts
+|   |   |   |   |   browser.ts
+|   |   |   |   |   browserContext.ts
+|   |   |   |   |   browserType.ts
+|   |   |   |   |   callLog.ts
+|   |   |   |   |   clock.ts
+|   |   |   |   |   console.ts
+|   |   |   |   |   cookieStore.ts
+|   |   |   |   |   debugController.ts
+|   |   |   |   |   debugger.ts
+|   |   |   |   |   DEPS.list
+|   |   |   |   |   deviceDescriptors.ts
+|   |   |   |   |   deviceDescriptorsSource.json
+|   |   |   |   |   dialog.ts
+|   |   |   |   |   dom.ts
+|   |   |   |   |   download.ts
+|   |   |   |   |   errors.ts
+|   |   |   |   |   fetch.ts
+|   |   |   |   |   fileChooser.ts
+|   |   |   |   |   fileUploadUtils.ts
+|   |   |   |   |   formData.ts
+|   |   |   |   |   frames.ts
+|   |   |   |   |   frameSelectors.ts
+|   |   |   |   |   harBackend.ts
+|   |   |   |   |   helper.ts
+|   |   |   |   |   index.ts
+|   |   |   |   |   input.ts
+|   |   |   |   |   instrumentation.ts
+|   |   |   |   |   javascript.ts
+|   |   |   |   |   launchApp.ts
+|   |   |   |   |   localUtils.ts
+|   |   |   |   |   macEditingCommands.ts
+|   |   |   |   |   network.ts
+|   |   |   |   |   page.ts
+|   |   |   |   |   pipeTransport.ts
+|   |   |   |   |   playwright.ts
+|   |   |   |   |   progress.ts
+|   |   |   |   |   protocolError.ts
+|   |   |   |   |   recorder.ts
+|   |   |   |   |   screencast.ts
+|   |   |   |   |   screenshotter.ts
+|   |   |   |   |   selectors.ts
+|   |   |   |   |   socksClientCertificatesInterceptor.ts
+|   |   |   |   |   socksInterceptor.ts
+|   |   |   |   |   transport.ts
+|   |   |   |   |   types.ts
+|   |   |   |   |   usKeyboardLayout.ts
+|   |   |   |   |   videoRecorder.ts
+|   |   |   |   |   
+|   |   |   |   +---agent
+|   |   |   |   |       actionRunner.ts
+|   |   |   |   |       actions.ts
+|   |   |   |   |       agent.ts
+|   |   |   |   |       backend.ts
+|   |   |   |   |       context.ts
+|   |   |   |   |       DEPS.list
+|   |   |   |   |       tools.ts
+|   |   |   |   |       
+|   |   |   |   +---android
+|   |   |   |   |   |   android.ts
+|   |   |   |   |   |   backendAdb.ts
+|   |   |   |   |   |   DEPS.list
+|   |   |   |   |   |   
+|   |   |   |   |   \---driver
+|   |   |   |   |       |   .gitignore
+|   |   |   |   |       |   build.gradle
+|   |   |   |   |       |   gradle.properties
+|   |   |   |   |       |   gradlew
+|   |   |   |   |       |   gradlew.bat
+|   |   |   |   |       |   settings.gradle
+|   |   |   |   |       |   
+|   |   |   |   |       +---app
+|   |   |   |   |       |   |   build.gradle
+|   |   |   |   |       |   |   proguard-rules.pro
+|   |   |   |   |       |   |   
+|   |   |   |   |       |   \---src
+|   |   |   |   |       |       +---androidTest
+|   |   |   |   |       |       |   \---java
+|   |   |   |   |       |       |       \---com
+|   |   |   |   |       |       |           \---microsoft
+|   |   |   |   |       |       |               \---playwright
+|   |   |   |   |       |       |                   \---androiddriver
+|   |   |   |   |       |       |                           InstrumentedTest.java
+|   |   |   |   |       |       |                           
+|   |   |   |   |       |       \---main
+|   |   |   |   |       |           |   AndroidManifest.xml
+|   |   |   |   |       |           |   
+|   |   |   |   |       |           \---res
+|   |   |   |   |       |               +---drawable
+|   |   |   |   |       |               |       ic_launcher_background.xml
+|   |   |   |   |       |               |       
+|   |   |   |   |       |               +---drawable-v24
+|   |   |   |   |       |               |       ic_launcher_foreground.xml
+|   |   |   |   |       |               |       
+|   |   |   |   |       |               \---mipmap-anydpi-v26
+|   |   |   |   |       |                       ic_launcher.xml
+|   |   |   |   |       |                       ic_launcher_round.xml
+|   |   |   |   |       |                       
+|   |   |   |   |       \---gradle
+|   |   |   |   |           \---wrapper
+|   |   |   |   |                   gradle-wrapper.jar
+|   |   |   |   |                   gradle-wrapper.properties
+|   |   |   |   |                   
+|   |   |   |   +---bidi
+|   |   |   |   |   |   bidiBrowser.ts
+|   |   |   |   |   |   bidiChromium.ts
+|   |   |   |   |   |   bidiConnection.ts
+|   |   |   |   |   |   bidiExecutionContext.ts
+|   |   |   |   |   |   bidiFirefox.ts
+|   |   |   |   |   |   bidiInput.ts
+|   |   |   |   |   |   bidiNetworkManager.ts
+|   |   |   |   |   |   bidiOverCdp.ts
+|   |   |   |   |   |   bidiPage.ts
+|   |   |   |   |   |   bidiPdf.ts
+|   |   |   |   |   |   DEPS.list
+|   |   |   |   |   |   
+|   |   |   |   |   \---third_party
+|   |   |   |   |           bidiCommands.d.ts
+|   |   |   |   |           bidiDeserializer.ts
+|   |   |   |   |           bidiKeyboard.ts
+|   |   |   |   |           bidiProtocol.ts
+|   |   |   |   |           bidiProtocolCore.ts
+|   |   |   |   |           bidiProtocolPermissions.ts
+|   |   |   |   |           bidiSerializer.ts
+|   |   |   |   |           firefoxPrefs.ts
+|   |   |   |   |           LICENSE
+|   |   |   |   |           
+|   |   |   |   +---chromium
+|   |   |   |   |       appIcon.png
+|   |   |   |   |       chromium.ts
+|   |   |   |   |       chromiumSwitches.ts
+|   |   |   |   |       crBrowser.ts
+|   |   |   |   |       crConnection.ts
+|   |   |   |   |       crCoverage.ts
+|   |   |   |   |       crDevTools.ts
+|   |   |   |   |       crDragDrop.ts
+|   |   |   |   |       crExecutionContext.ts
+|   |   |   |   |       crInput.ts
+|   |   |   |   |       crNetworkManager.ts
+|   |   |   |   |       crPage.ts
+|   |   |   |   |       crPdf.ts
+|   |   |   |   |       crProtocolHelper.ts
+|   |   |   |   |       crServiceWorker.ts
+|   |   |   |   |       defaultFontFamilies.ts
+|   |   |   |   |       protocol.d.ts
+|   |   |   |   |       
+|   |   |   |   +---codegen
+|   |   |   |   |       csharp.ts
+|   |   |   |   |       DEPS.list
+|   |   |   |   |       java.ts
+|   |   |   |   |       javascript.ts
+|   |   |   |   |       jsonl.ts
+|   |   |   |   |       language.ts
+|   |   |   |   |       languages.ts
+|   |   |   |   |       python.ts
+|   |   |   |   |       types.ts
+|   |   |   |   |       
+|   |   |   |   +---dispatchers
+|   |   |   |   |       androidDispatcher.ts
+|   |   |   |   |       artifactDispatcher.ts
+|   |   |   |   |       browserContextDispatcher.ts
+|   |   |   |   |       browserDispatcher.ts
+|   |   |   |   |       browserTypeDispatcher.ts
+|   |   |   |   |       cdpSessionDispatcher.ts
+|   |   |   |   |       debugControllerDispatcher.ts
+|   |   |   |   |       DEPS.list
+|   |   |   |   |       dialogDispatcher.ts
+|   |   |   |   |       dispatcher.ts
+|   |   |   |   |       electronDispatcher.ts
+|   |   |   |   |       elementHandlerDispatcher.ts
+|   |   |   |   |       frameDispatcher.ts
+|   |   |   |   |       jsHandleDispatcher.ts
+|   |   |   |   |       jsonPipeDispatcher.ts
+|   |   |   |   |       localUtilsDispatcher.ts
+|   |   |   |   |       networkDispatchers.ts
+|   |   |   |   |       pageDispatcher.ts
+|   |   |   |   |       playwrightDispatcher.ts
+|   |   |   |   |       streamDispatcher.ts
+|   |   |   |   |       tracingDispatcher.ts
+|   |   |   |   |       webSocketRouteDispatcher.ts
+|   |   |   |   |       writableStreamDispatcher.ts
+|   |   |   |   |       
+|   |   |   |   +---electron
+|   |   |   |   |       DEPS.list
+|   |   |   |   |       electron.ts
+|   |   |   |   |       loader.ts
+|   |   |   |   |       
+|   |   |   |   +---firefox
+|   |   |   |   |       ffBrowser.ts
+|   |   |   |   |       ffConnection.ts
+|   |   |   |   |       ffExecutionContext.ts
+|   |   |   |   |       ffInput.ts
+|   |   |   |   |       ffNetworkManager.ts
+|   |   |   |   |       ffPage.ts
+|   |   |   |   |       firefox.ts
+|   |   |   |   |       protocol.d.ts
+|   |   |   |   |       
+|   |   |   |   +---har
+|   |   |   |   |       harRecorder.ts
+|   |   |   |   |       harTracer.ts
+|   |   |   |   |       
+|   |   |   |   +---recorder
+|   |   |   |   |       chat.ts
+|   |   |   |   |       DEPS.list
+|   |   |   |   |       recorderApp.ts
+|   |   |   |   |       recorderRunner.ts
+|   |   |   |   |       recorderSignalProcessor.ts
+|   |   |   |   |       recorderUtils.ts
+|   |   |   |   |       throttledFile.ts
+|   |   |   |   |       
+|   |   |   |   +---registry
+|   |   |   |   |       browserFetcher.ts
+|   |   |   |   |       dependencies.ts
+|   |   |   |   |       index.ts
+|   |   |   |   |       nativeDeps.ts
+|   |   |   |   |       oopDownloadBrowserMain.ts
+|   |   |   |   |       
+|   |   |   |   +---trace
+|   |   |   |   |   +---recorder
+|   |   |   |   |   |       DEPS.list
+|   |   |   |   |   |       snapshotter.ts
+|   |   |   |   |   |       snapshotterInjected.ts
+|   |   |   |   |   |       tracing.ts
+|   |   |   |   |   |       
+|   |   |   |   |   +---test
+|   |   |   |   |   |       DEPS.list
+|   |   |   |   |   |       
+|   |   |   |   |   \---viewer
+|   |   |   |   |           DEPS.list
+|   |   |   |   |           traceViewer.ts
+|   |   |   |   |           
+|   |   |   |   +---utils
+|   |   |   |   |   |   ascii.ts
+|   |   |   |   |   |   comparators.ts
+|   |   |   |   |   |   crypto.ts
+|   |   |   |   |   |   debug.ts
+|   |   |   |   |   |   debugLogger.ts
+|   |   |   |   |   |   DEPS.list
+|   |   |   |   |   |   env.ts
+|   |   |   |   |   |   eventsHelper.ts
+|   |   |   |   |   |   expectUtils.ts
+|   |   |   |   |   |   fileUtils.ts
+|   |   |   |   |   |   happyEyeballs.ts
+|   |   |   |   |   |   hostPlatform.ts
+|   |   |   |   |   |   httpServer.ts
+|   |   |   |   |   |   imageUtils.ts
+|   |   |   |   |   |   linuxUtils.ts
+|   |   |   |   |   |   network.ts
+|   |   |   |   |   |   nodePlatform.ts
+|   |   |   |   |   |   pipeTransport.ts
+|   |   |   |   |   |   processLauncher.ts
+|   |   |   |   |   |   profiler.ts
+|   |   |   |   |   |   socksProxy.ts
+|   |   |   |   |   |   spawnAsync.ts
+|   |   |   |   |   |   task.ts
+|   |   |   |   |   |   userAgent.ts
+|   |   |   |   |   |   wsServer.ts
+|   |   |   |   |   |   zipFile.ts
+|   |   |   |   |   |   zones.ts
+|   |   |   |   |   |   
+|   |   |   |   |   \---image_tools
+|   |   |   |   |           colorUtils.ts
+|   |   |   |   |           compare.ts
+|   |   |   |   |           imageChannel.ts
+|   |   |   |   |           stats.ts
+|   |   |   |   |           
+|   |   |   |   \---webkit
+|   |   |   |           protocol.d.ts
+|   |   |   |           webkit.ts
+|   |   |   |           wkBrowser.ts
+|   |   |   |           wkConnection.ts
+|   |   |   |           wkExecutionContext.ts
+|   |   |   |           wkInput.ts
+|   |   |   |           wkInterceptableRequest.ts
+|   |   |   |           wkPage.ts
+|   |   |   |           wkProvisionalPage.ts
+|   |   |   |           wkWorkers.ts
+|   |   |   |           
+|   |   |   +---third_party
+|   |   |   |       pixelmatch.js
+|   |   |   |       
+|   |   |   \---utils
+|   |   |       \---isomorphic
+|   |   |           |   ariaSnapshot.ts
+|   |   |           |   assert.ts
+|   |   |           |   colors.ts
+|   |   |           |   cssParser.ts
+|   |   |           |   cssTokenizer.ts
+|   |   |           |   DEPS.list
+|   |   |           |   headers.ts
+|   |   |           |   locatorGenerators.ts
+|   |   |           |   locatorParser.ts
+|   |   |           |   locatorUtils.ts
+|   |   |           |   lruCache.ts
+|   |   |           |   manualPromise.ts
+|   |   |           |   mimeType.ts
+|   |   |           |   multimap.ts
+|   |   |           |   protocolFormatter.ts
+|   |   |           |   protocolMetainfo.ts
+|   |   |           |   rtti.ts
+|   |   |           |   selectorParser.ts
+|   |   |           |   semaphore.ts
+|   |   |           |   stackTrace.ts
+|   |   |           |   stringUtils.ts
+|   |   |           |   time.ts
+|   |   |           |   timeoutRunner.ts
+|   |   |           |   traceUtils.ts
+|   |   |           |   types.ts
+|   |   |           |   urlMatch.ts
+|   |   |           |   utilityScriptSerializers.ts
+|   |   |           |   
+|   |   |           \---trace
+|   |   |               |   DEPS.list
+|   |   |               |   entries.ts
+|   |   |               |   snapshotRenderer.ts
+|   |   |               |   snapshotServer.ts
+|   |   |               |   snapshotStorage.ts
+|   |   |               |   traceLoader.ts
+|   |   |               |   traceModel.ts
+|   |   |               |   traceModernizer.ts
+|   |   |               |   
+|   |   |               \---versions
+|   |   |                       traceV3.ts
+|   |   |                       traceV4.ts
+|   |   |                       traceV5.ts
+|   |   |                       traceV6.ts
+|   |   |                       traceV7.ts
+|   |   |                       traceV8.ts
+|   |   |                       
+|   |   \---types
+|   |           protocol.d.ts
+|   |           structs.d.ts
+|   |           types.d.ts
+|   |           
+|   +---playwright-ct-core
+|   |   |   .npmignore
+|   |   |   index.d.ts
+|   |   |   index.js
+|   |   |   package.json
+|   |   |   README.md
+|   |   |   
+|   |   +---src
+|   |   |   |   DEPS.list
+|   |   |   |   devServer.ts
+|   |   |   |   mount.ts
+|   |   |   |   program.ts
+|   |   |   |   router.ts
+|   |   |   |   tsxTransform.ts
+|   |   |   |   vitePlugin.ts
+|   |   |   |   viteUtils.ts
+|   |   |   |   
+|   |   |   \---injected
+|   |   |           importRegistry.ts
+|   |   |           index.ts
+|   |   |           serializers.ts
+|   |   |           
+|   |   \---types
+|   |           component.d.ts
+|   |           
+|   +---playwright-ct-react
+|   |       .npmignore
+|   |       cli.js
+|   |       hooks.d.ts
+|   |       hooks.mjs
+|   |       index.d.ts
+|   |       index.js
+|   |       package.json
+|   |       README.md
+|   |       register.d.ts
+|   |       register.mjs
+|   |       registerSource.mjs
+|   |       
+|   +---playwright-ct-react17
+|   |       .npmignore
+|   |       cli.js
+|   |       hooks.d.ts
+|   |       hooks.mjs
+|   |       index.d.ts
+|   |       index.js
+|   |       package.json
+|   |       README.md
+|   |       register.d.ts
+|   |       register.mjs
+|   |       registerSource.mjs
+|   |       
+|   +---playwright-ct-svelte
+|   |       .npmignore
+|   |       cli.js
+|   |       hooks.d.ts
+|   |       hooks.mjs
+|   |       index.d.ts
+|   |       index.js
+|   |       package.json
+|   |       README.md
+|   |       register.d.ts
+|   |       register.mjs
+|   |       registerSource.mjs
+|   |       
+|   +---playwright-ct-vue
+|   |       .npmignore
+|   |       cli.js
+|   |       hooks.d.ts
+|   |       hooks.mjs
+|   |       index.d.ts
+|   |       index.js
+|   |       package.json
+|   |       README.md
+|   |       register.d.ts
+|   |       register.mjs
+|   |       registerSource.mjs
+|   |       
+|   +---playwright-firefox
+|   |       cli.js
+|   |       index.d.ts
+|   |       index.js
+|   |       index.mjs
+|   |       install.js
+|   |       package.json
+|   |       README.md
+|   |       
+|   +---playwright-test
+|   |       cli.js
+|   |       index.d.ts
+|   |       index.js
+|   |       index.mjs
+|   |       package.json
+|   |       reporter.d.ts
+|   |       reporter.js
+|   |       reporter.mjs
+|   |       
+|   +---playwright-webkit
+|   |       cli.js
+|   |       index.d.ts
+|   |       index.js
+|   |       index.mjs
+|   |       install.js
+|   |       package.json
+|   |       README.md
+|   |       
+|   +---protocol
+|   |   \---src
+|   |           callMetadata.d.ts
+|   |           channels.d.ts
+|   |           DEPS.list
+|   |           progress.d.ts
+|   |           protocol.yml
+|   |           
+|   +---recorder
+|   |   |   .gitignore
+|   |   |   index.html
+|   |   |   package.json
+|   |   |   tsconfig.json
+|   |   |   tsconfig.node.json
+|   |   |   vite.config.ts
+|   |   |   
+|   |   +---public
+|   |   |       playwright-logo.svg
+|   |   |       
+|   |   \---src
+|   |           actions.d.ts
+|   |           callLog.css
+|   |           callLog.tsx
+|   |           DEPS.list
+|   |           index.tsx
+|   |           main.tsx
+|   |           recorder.css
+|   |           recorder.tsx
+|   |           recorderTypes.d.ts
+|   |           vite-env.d.ts
+|   |           
+|   +---trace
+|   |   \---src
+|   |           DEPS.list
+|   |           har.ts
+|   |           snapshot.ts
+|   |           trace.ts
+|   |           
+|   +---trace-viewer
+|   |   |   .gitignore
+|   |   |   bundle.ts
+|   |   |   index.html
+|   |   |   package.json
+|   |   |   snapshot.html
+|   |   |   tsconfig.json
+|   |   |   tsconfig.node.json
+|   |   |   uiMode.html
+|   |   |   vite.config.ts
+|   |   |   vite.sw.config.ts
+|   |   |   
+|   |   +---public
+|   |   |       manifest.webmanifest
+|   |   |       playwright-logo.svg
+|   |   |       
+|   |   \---src
+|   |       |   DEPS.list
+|   |       |   index.tsx
+|   |       |   sw-main.ts
+|   |       |   uiMode.tsx
+|   |       |   vite-env.d.ts
+|   |       |   
+|   |       +---sw
+|   |       |       DEPS.list
+|   |       |       main.ts
+|   |       |       progress.ts
+|   |       |       traceLoaderBackends.ts
+|   |       |       
+|   |       +---third_party
+|   |       |       devtools.ts
+|   |       |       
+|   |       \---ui
+|   |               actionList.css
+|   |               actionList.tsx
+|   |               annotationsTab.css
+|   |               annotationsTab.tsx
+|   |               attachmentsTab.css
+|   |               attachmentsTab.tsx
+|   |               browserFrame.css
+|   |               browserFrame.tsx
+|   |               callTab.css
+|   |               callTab.tsx
+|   |               clickPointer.tsx
+|   |               codegen.ts
+|   |               consoleTab.css
+|   |               consoleTab.tsx
+|   |               copyToClipboard.css
+|   |               copyToClipboard.tsx
+|   |               defaultSettingsView.tsx
+|   |               DEPS.list
+|   |               errorsTab.tsx
+|   |               filmStrip.css
+|   |               filmStrip.tsx
+|   |               geometry.ts
+|   |               inspectorTab.tsx
+|   |               liveWorkbenchLoader.tsx
+|   |               logTab.css
+|   |               logTab.tsx
+|   |               metadataView.tsx
+|   |               networkFilters.css
+|   |               networkFilters.tsx
+|   |               networkResourceDetails.css
+|   |               networkResourceDetails.tsx
+|   |               networkTab.css
+|   |               networkTab.tsx
+|   |               placeholderPanel.tsx
+|   |               settingsView.css
+|   |               settingsView.tsx
+|   |               snapshotTab.css
+|   |               snapshotTab.tsx
+|   |               sourceTab.css
+|   |               sourceTab.tsx
+|   |               stackTrace.css
+|   |               stackTrace.tsx
+|   |               tag.css
+|   |               tag.tsx
+|   |               testUtils.ts
+|   |               timeline.css
+|   |               timeline.tsx
+|   |               traceModelContext.tsx
+|   |               uiModeFiltersView.css
+|   |               uiModeFiltersView.tsx
+|   |               uiModeTestListView.css
+|   |               uiModeTestListView.tsx
+|   |               uiModeTraceView.tsx
+|   |               uiModeView.css
+|   |               uiModeView.tsx
+|   |               workbench.css
+|   |               workbench.tsx
+|   |               workbenchLoader.css
+|   |               workbenchLoader.tsx
+|   |               
+|   \---web
+|       |   .gitignore
+|       |   package.json
+|       |   
+|       \---src
+|           |   ansi2html.ts
+|           |   common.css
+|           |   DEPS.list
+|           |   renderUtils.tsx
+|           |   theme.ts
+|           |   uiUtils.ts
+|           |   
+|           +---assets
+|           |       playwright-logo.svg
+|           |       
+|           +---components
+|           |       codeMirrorModule.tsx
+|           |       codeMirrorWrapper.css
+|           |       codeMirrorWrapper.tsx
+|           |       DEPS.list
+|           |       dialogToolbarButton.tsx
+|           |       errorMessage.css
+|           |       errorMessage.tsx
+|           |       expandable.css
+|           |       expandable.tsx
+|           |       gridView.css
+|           |       gridView.tsx
+|           |       listView.css
+|           |       listView.tsx
+|           |       sourceChooser.css
+|           |       sourceChooser.tsx
+|           |       splitView.css
+|           |       splitView.tsx
+|           |       tabbedPane.css
+|           |       tabbedPane.tsx
+|           |       toolbar.css
+|           |       toolbar.tsx
+|           |       toolbarButton.css
+|           |       toolbarButton.tsx
+|           |       treeView.css
+|           |       treeView.tsx
+|           |       xtermModule.tsx
+|           |       xtermWrapper.css
+|           |       xtermWrapper.tsx
+|           |       
+|           +---shared
+|           |       DEPS.list
+|           |       dialog.tsx
+|           |       glassPane.tsx
+|           |       imageDiffView.tsx
+|           |       prompts.ts
+|           |       resizeView.tsx
+|           |       
+|           \---third_party
+|               \---vscode
+|                       codicon.css
+|                       codicon.ttf
+|                       colors.css
+|                       LICENSE.txt
+|                       
++---tests
+|   |   tsconfig.json
+|   |   
+|   +---android
+|   |       android.spec.ts
+|   |       androidTest.ts
+|   |       browser.spec.ts
+|   |       device.spec.ts
+|   |       launch-server.spec.ts
+|   |       playwright.config.ts
+|   |       webview.spec.ts
+|   |       
+|   +---assets
+|   |   |   background-color.html
+|   |   |   beforeunload.html
+|   |   |   blob-1.42.zip
+|   |   |   blob-1.52.zip
+|   |   |   button-overlay-oopif.html
+|   |   |   callback.js
+|   |   |   checkerboard.html
+|   |   |   chromium-linux.zip
+|   |   |   codicon.css
+|   |   |   codicon.ttf
+|   |   |   consolelog.html
+|   |   |   counter.html
+|   |   |   csp.html
+|   |   |   css-transition.html
+|   |   |   deep-shadow.html
+|   |   |   device-motion.html
+|   |   |   device-orientation.html
+|   |   |   dom.html
+|   |   |   download-blob.html
+|   |   |   drag-n-drop.html
+|   |   |   dummy_bad_browser_executable.js
+|   |   |   dynamic-oopif.html
+|   |   |   empty-standard-mode.html
+|   |   |   empty.html
+|   |   |   empty.pdf
+|   |   |   error.html
+|   |   |   example.mp3
+|   |   |   file to upload.txt
+|   |   |   file-to-upload-2.txt
+|   |   |   file-to-upload.txt
+|   |   |   formatted-number.html
+|   |   |   geolocation.html
+|   |   |   global-var.html
+|   |   |   grid-iframe-in-shadow.html
+|   |   |   grid.html
+|   |   |   har-fulfill.har
+|   |   |   har-redirect.har
+|   |   |   har-sha1-main-response.txt
+|   |   |   har-sha1.har
+|   |   |   har.html
+|   |   |   headings.html
+|   |   |   highdpi.html
+|   |   |   historyapi.html
+|   |   |   injectedfile.js
+|   |   |   injectedstyle.css
+|   |   |   media-query-prefers-color-scheme.svg
+|   |   |   mobile.html
+|   |   |   movie.mp4
+|   |   |   movie.ogv
+|   |   |   movie.webm
+|   |   |   mui.html
+|   |   |   networkidle-frame.html
+|   |   |   networkidle.html
+|   |   |   networkidle.js
+|   |   |   offscreenbuttons.html
+|   |   |   one-style.css
+|   |   |   one-style.html
+|   |   |   overflow-large.html
+|   |   |   overflow.html
+|   |   |   player.html
+|   |   |   playground.html
+|   |   |   pptr.png
+|   |   |   prefetch.html
+|   |   |   prefetch.js
+|   |   |   preload.html
+|   |   |   react.html
+|   |   |   redirectloop1.html
+|   |   |   redirectloop2.html
+|   |   |   resetcss.html
+|   |   |   rgb.avif
+|   |   |   rotate-pseudo.html
+|   |   |   rotate-z-shadow-dom.html
+|   |   |   rotate-z.html
+|   |   |   sectionselectorengine.js
+|   |   |   self-request.html
+|   |   |   shadow-dom-link.html
+|   |   |   shadow.html
+|   |   |   simple.json
+|   |   |   simplezip.json
+|   |   |   tamperable.html
+|   |   |   test-trace1.zip
+|   |   |   test-trace2.zip
+|   |   |   title.html
+|   |   |   trace-1.31.zip
+|   |   |   trace-1.37.zip
+|   |   |   trace-from-the-future.zip
+|   |   |   trace-library-1.46.zip
+|   |   |   trace-remote-time-diff.zip
+|   |   |   video.html
+|   |   |   video_mp4.html
+|   |   |   video_webm.html
+|   |   |   web-animation.html
+|   |   |   window-stop.html
+|   |   |   wrappedlink.html
+|   |   |   
+|   |   +---axe-core
+|   |   |       accessible-text.js
+|   |   |       implicit-role.js
+|   |   |       LICENSE
+|   |   |       README.md
+|   |   |       
+|   |   +---cached
+|   |   |       bfcached.html
+|   |   |       one-style.css
+|   |   |       one-style.html
+|   |   |       
+|   |   +---client-certificates
+|   |   |   |   generate.sh
+|   |   |   |   README.md
+|   |   |   |   
+|   |   |   +---client
+|   |   |   |   +---localhost
+|   |   |   |   |       localhost.csr
+|   |   |   |   |       localhost.ext
+|   |   |   |   |       localhost.key
+|   |   |   |   |       localhost.pem
+|   |   |   |   |       
+|   |   |   |   +---self-signed
+|   |   |   |   |       cert.pem
+|   |   |   |   |       csr.pem
+|   |   |   |   |       key.pem
+|   |   |   |   |       
+|   |   |   |   \---trusted
+|   |   |   |           cert-legacy.pfx
+|   |   |   |           cert.pem
+|   |   |   |           cert.pfx
+|   |   |   |           csr.pem
+|   |   |   |           key.pem
+|   |   |   |           
+|   |   |   \---server
+|   |   |           server_cert.pem
+|   |   |           server_key.pem
+|   |   |           
+|   |   +---csscoverage
+|   |   |       Dosis-Regular.ttf
+|   |   |       involved.html
+|   |   |       media.html
+|   |   |       multiple.html
+|   |   |       OFL.txt
+|   |   |       simple.html
+|   |   |       sourceurl.html
+|   |   |       stylesheet1.css
+|   |   |       stylesheet2.css
+|   |   |       unused.html
+|   |   |       
+|   |   +---digits
+|   |   |       0.png
+|   |   |       1.png
+|   |   |       2.png
+|   |   |       3.png
+|   |   |       4.png
+|   |   |       5.png
+|   |   |       6.png
+|   |   |       7.png
+|   |   |       8.png
+|   |   |       9.png
+|   |   |       
+|   |   +---es6
+|   |   |       es6import.js
+|   |   |       es6module.js
+|   |   |       es6pathimport.js
+|   |   |       
+|   |   +---evals
+|   |   |       fill-form-submit.html
+|   |   |       fill-form.html
+|   |   |       
+|   |   +---extension-mv3-simple
+|   |   |       content-script.js
+|   |   |       index.js
+|   |   |       manifest.json
+|   |   |       
+|   |   +---extension-mv3-with-logging
+|   |   |       background.js
+|   |   |       content.js
+|   |   |       manifest.json
+|   |   |       
+|   |   +---frames
+|   |   |       child-redirect.html
+|   |   |       frame.html
+|   |   |       frameset.html
+|   |   |       lazy-frame.html
+|   |   |       nested-frames.html
+|   |   |       one-frame.html
+|   |   |       redirect-my-parent.html
+|   |   |       script.js
+|   |   |       style.css
+|   |   |       two-frames.html
+|   |   |       
+|   |   +---input
+|   |   |       animating-button.html
+|   |   |       background-fixed.html
+|   |   |       button.html
+|   |   |       checkbox.html
+|   |   |       drag-n-drop-manual.html
+|   |   |       fileupload-multi.html
+|   |   |       fileupload.html
+|   |   |       folderupload.html
+|   |   |       handle-locator.html
+|   |   |       keyboard.html
+|   |   |       mouse-helper.js
+|   |   |       rotatedButton.html
+|   |   |       scrollable.html
+|   |   |       scrollable2.html
+|   |   |       select.html
+|   |   |       textarea.html
+|   |   |       touches.html
+|   |   |       
+|   |   +---jscoverage
+|   |   |       eval.html
+|   |   |       involved.html
+|   |   |       multiple.html
+|   |   |       ranges.html
+|   |   |       script1.js
+|   |   |       script2.js
+|   |   |       simple.html
+|   |   |       sourceurl.html
+|   |   |       unused.html
+|   |   |       
+|   |   +---load-event
+|   |   |       load-event.html
+|   |   |       module.js
+|   |   |       
+|   |   +---modernizr
+|   |   |       index.html
+|   |   |       mobile-safari-18.json
+|   |   |       modernizr.js
+|   |   |       README.md
+|   |   |       roll.sh
+|   |   |       safari-18.json
+|   |   |       
+|   |   +---network-tab
+|   |   |       font.woff2
+|   |   |       image.png
+|   |   |       network.html
+|   |   |       script.js
+|   |   |       style.css
+|   |   |       
+|   |   +---popup
+|   |   |       popup.html
+|   |   |       window-open.html
+|   |   |       
+|   |   +---react
+|   |   |       material-ui@5.2.2.production.min.js
+|   |   |       react-dom@16.13.1.production.min.js
+|   |   |       react-dom@17.0.2.production.min.js
+|   |   |       react@16.13.1.production.min.js
+|   |   |       react@17.0.2.production.min.js
+|   |   |       
+|   |   +---reading-list
+|   |   |       react-dom_15.7.0.js
+|   |   |       react-dom_16.14.0.js
+|   |   |       react-dom_17.0.2.js
+|   |   |       react-dom_18.1.0.js
+|   |   |       react15.html
+|   |   |       react16.html
+|   |   |       react17.html
+|   |   |       react18.html
+|   |   |       react_15.7.0.js
+|   |   |       react_16.14.0.js
+|   |   |       react_17.0.2.js
+|   |   |       react_18.1.0.js
+|   |   |       style.css
+|   |   |       vue2.html
+|   |   |       vue3.html
+|   |   |       vue_2.6.14.js
+|   |   |       vue_3.1.5.js
+|   |   |       
+|   |   +---screenshots
+|   |   |       canvas.html
+|   |   |       controls.html
+|   |   |       translateZ.html
+|   |   |       webgl.html
+|   |   |       
+|   |   +---selenium-grid
+|   |   |       broken-selenium-driver.js
+|   |   |       selenium-config-standalone.json
+|   |   |       
+|   |   +---serviceworkers
+|   |   |   +---bug-33561
+|   |   |   |       index.html
+|   |   |   |       sw.js
+|   |   |   |       
+|   |   |   +---empty
+|   |   |   |       sw.html
+|   |   |   |       sw.js
+|   |   |   |       
+|   |   |   +---fetch
+|   |   |   |       style.css
+|   |   |   |       sw.html
+|   |   |   |       sw.js
+|   |   |   |       
+|   |   |   +---fetchdummy
+|   |   |   |       sw.html
+|   |   |   |       sw.js
+|   |   |   |       
+|   |   |   \---stub
+|   |   |           sw.html
+|   |   |           sw.js
+|   |   |           
+|   |   +---shared-worker
+|   |   |       shared-worker.html
+|   |   |       shared-worker.js
+|   |   |       
+|   |   +---stress
+|   |   |   |   asset-manifest.json
+|   |   |   |   favicon.ico
+|   |   |   |   index.html
+|   |   |   |   logo192.png
+|   |   |   |   logo512.png
+|   |   |   |   manifest.json
+|   |   |   |   robots.txt
+|   |   |   |   
+|   |   |   \---static
+|   |   |       +---css
+|   |   |       |       main.073c9b0a.css
+|   |   |       |       main.073c9b0a.css.map
+|   |   |       |       
+|   |   |       +---js
+|   |   |       |       787.2f3b90fa.chunk.js
+|   |   |       |       787.2f3b90fa.chunk.js.map
+|   |   |       |       main.cc4a7955.js
+|   |   |       |       main.cc4a7955.js.LICENSE.txt
+|   |   |       |       main.cc4a7955.js.map
+|   |   |       |       
+|   |   |       \---media
+|   |   |               logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg
+|   |   |               
+|   |   +---to-do-notifications
+|   |   |   |   index.html
+|   |   |   |   LICENSE
+|   |   |   |   manifest.webapp
+|   |   |   |   README.md
+|   |   |   |   
+|   |   |   +---scripts
+|   |   |   |       todo.js
+|   |   |   |       
+|   |   |   \---style
+|   |   |           style.css
+|   |   |           
+|   |   +---wasm
+|   |   |       table2.html
+|   |   |       table2.wasm
+|   |   |       
+|   |   +---webfont
+|   |   |       iconfont.svg
+|   |   |       iconfont.woff2
+|   |   |       README.md
+|   |   |       webfont.html
+|   |   |       
+|   |   +---worker
+|   |   |       import-me.js
+|   |   |       worker-http-import.html
+|   |   |       worker-http-import.js
+|   |   |       worker.html
+|   |   |       worker.js
+|   |   |       
+|   |   \---wpt
+|   |       |   LICENSE.md
+|   |       |   README.md
+|   |       |   
+|   |       +---accname
+|   |       |   +---manual
+|   |       |   |       description_1.0_combobox-focusable-manual.html
+|   |       |   |       description_from_content_of_describedby_element-manual.html
+|   |       |   |       description_link-with-label-manual.html
+|   |       |   |       description_test_case_557-manual.html
+|   |       |   |       description_test_case_664-manual.html
+|   |       |   |       description_test_case_665-manual.html
+|   |       |   |       description_test_case_666-manual.html
+|   |       |   |       description_test_case_772-manual.html
+|   |       |   |       description_test_case_773-manual.html
+|   |       |   |       description_test_case_774-manual.html
+|   |       |   |       description_test_case_838-manual.html
+|   |       |   |       description_test_case_broken_reference-manual.html
+|   |       |   |       description_test_case_one_valid_reference-manual.html
+|   |       |   |       description_title-same-element-manual.html
+|   |       |   |       foo.jpg
+|   |       |   |       name_1.0_combobox-focusable-alternative-manual.html
+|   |       |   |       name_1.0_combobox-focusable-manual.html
+|   |       |   |       name_checkbox-label-embedded-combobox-manual.html
+|   |       |   |       name_checkbox-label-embedded-listbox-manual.html
+|   |       |   |       name_checkbox-label-embedded-menu-manual.html
+|   |       |   |       name_checkbox-label-embedded-select-manual.html
+|   |       |   |       name_checkbox-label-embedded-slider-manual.html
+|   |       |   |       name_checkbox-label-embedded-spinbutton-manual.html
+|   |       |   |       name_checkbox-label-embedded-textbox-manual.html
+|   |       |   |       name_checkbox-label-multiple-label-alternative-manual.html
+|   |       |   |       name_checkbox-label-multiple-label-manual.html
+|   |       |   |       name_checkbox-title-manual.html
+|   |       |   |       name_file-label-embedded-combobox-manual.html
+|   |       |   |       name_file-label-embedded-menu-manual.html
+|   |       |   |       name_file-label-embedded-select-manual.html
+|   |       |   |       name_file-label-embedded-slider-manual.html
+|   |       |   |       name_file-label-embedded-spinbutton-manual.html
+|   |       |   |       name_file-label-inline-block-elements-manual.html
+|   |       |   |       name_file-label-inline-block-styles-manual.html
+|   |       |   |       name_file-label-inline-hidden-elements-manual.html
+|   |       |   |       name_file-label-owned-combobox-manual.html
+|   |       |   |       name_file-label-owned-combobox-owned-listbox-manual.html
+|   |       |   |       name_file-title-manual.html
+|   |       |   |       name_from_content-manual.html
+|   |       |   |       name_from_content_of_label-manual.html
+|   |       |   |       name_from_content_of_labelledby_element-manual.html
+|   |       |   |       name_from_content_of_labelledby_elements_one_of_which_is_hidden-manual.html
+|   |       |   |       name_heading-combobox-focusable-alternative-manual.html
+|   |       |   |       name_image-title-manual.html
+|   |       |   |       name_link-mixed-content-manual.html
+|   |       |   |       name_link-with-label-manual.html
+|   |       |   |       name_password-label-embedded-combobox-manual.html
+|   |       |   |       name_password-label-embedded-menu-manual.html
+|   |       |   |       name_password-label-embedded-select-manual.html
+|   |       |   |       name_password-label-embedded-slider-manual.html
+|   |       |   |       name_password-label-embedded-spinbutton-manual.html
+|   |       |   |       name_password-title-manual.html
+|   |       |   |       name_radio-label-embedded-combobox-manual.html
+|   |       |   |       name_radio-label-embedded-menu-manual.html
+|   |       |   |       name_radio-label-embedded-select-manual.html
+|   |       |   |       name_radio-label-embedded-slider-manual.html
+|   |       |   |       name_radio-label-embedded-spinbutton-manual.html
+|   |       |   |       name_radio-title-manual.html
+|   |       |   |       name_test_case_539-manual.html
+|   |       |   |       name_test_case_540-manual.html
+|   |       |   |       name_test_case_541-manual.html
+|   |       |   |       name_test_case_543-manual.html
+|   |       |   |       name_test_case_544-manual.html
+|   |       |   |       name_test_case_545-manual.html
+|   |       |   |       name_test_case_546-manual.html
+|   |       |   |       name_test_case_547-manual.html
+|   |       |   |       name_test_case_548-manual.html
+|   |       |   |       name_test_case_549-manual.html
+|   |       |   |       name_test_case_550-manual.html
+|   |       |   |       name_test_case_551-manual.html
+|   |       |   |       name_test_case_552-manual.html
+|   |       |   |       name_test_case_553-manual.html
+|   |       |   |       name_test_case_556-manual.html
+|   |       |   |       name_test_case_557-manual.html
+|   |       |   |       name_test_case_558-manual.html
+|   |       |   |       name_test_case_559-manual.html
+|   |       |   |       name_test_case_560-manual.html
+|   |       |   |       name_test_case_561-manual.html
+|   |       |   |       name_test_case_562-manual.html
+|   |       |   |       name_test_case_563-manual.html
+|   |       |   |       name_test_case_564-manual.html
+|   |       |   |       name_test_case_565-manual.html
+|   |       |   |       name_test_case_566-manual.html
+|   |       |   |       name_test_case_596-manual.html
+|   |       |   |       name_test_case_597-manual.html
+|   |       |   |       name_test_case_598-manual.html
+|   |       |   |       name_test_case_599-manual.html
+|   |       |   |       name_test_case_600-manual.html
+|   |       |   |       name_test_case_601-manual.html
+|   |       |   |       name_test_case_602-manual.html
+|   |       |   |       name_test_case_603-manual.html
+|   |       |   |       name_test_case_604-manual.html
+|   |       |   |       name_test_case_605-manual.html
+|   |       |   |       name_test_case_606-manual.html
+|   |       |   |       name_test_case_607-manual.html
+|   |       |   |       name_test_case_608-manual.html
+|   |       |   |       name_test_case_609-manual.html
+|   |       |   |       name_test_case_610-manual.html
+|   |       |   |       name_test_case_611-manual.html
+|   |       |   |       name_test_case_612-manual.html
+|   |       |   |       name_test_case_613-manual.html
+|   |       |   |       name_test_case_614-manual.html
+|   |       |   |       name_test_case_615-manual.html
+|   |       |   |       name_test_case_616-manual.html
+|   |       |   |       name_test_case_617-manual.html
+|   |       |   |       name_test_case_618-manual.html
+|   |       |   |       name_test_case_619-manual.html
+|   |       |   |       name_test_case_620-manual.html
+|   |       |   |       name_test_case_621-manual.html
+|   |       |   |       name_test_case_659-manual.html
+|   |       |   |       name_test_case_660-manual.html
+|   |       |   |       name_test_case_661-manual.html
+|   |       |   |       name_test_case_662-manual.html
+|   |       |   |       name_test_case_663a-manual.html
+|   |       |   |       name_test_case_721-manual.html
+|   |       |   |       name_test_case_723-manual.html
+|   |       |   |       name_test_case_724-manual.html
+|   |       |   |       name_test_case_725-manual.html
+|   |       |   |       name_test_case_726-manual.html
+|   |       |   |       name_test_case_727-manual.html
+|   |       |   |       name_test_case_728-manual.html
+|   |       |   |       name_test_case_729-manual.html
+|   |       |   |       name_test_case_730-manual.html
+|   |       |   |       name_test_case_731-manual.html
+|   |       |   |       name_test_case_733-manual.html
+|   |       |   |       name_test_case_734-manual.html
+|   |       |   |       name_test_case_735-manual.html
+|   |       |   |       name_test_case_736-manual.html
+|   |       |   |       name_test_case_737-manual.html
+|   |       |   |       name_test_case_738-manual.html
+|   |       |   |       name_test_case_739-manual.html
+|   |       |   |       name_test_case_740-manual.html
+|   |       |   |       name_test_case_741-manual.html
+|   |       |   |       name_test_case_742-manual.html
+|   |       |   |       name_test_case_743-manual.html
+|   |       |   |       name_test_case_744-manual.html
+|   |       |   |       name_test_case_745-manual.html
+|   |       |   |       name_test_case_746-manual.html
+|   |       |   |       name_test_case_747-manual.html
+|   |       |   |       name_test_case_748-manual.html
+|   |       |   |       name_test_case_749-manual.html
+|   |       |   |       name_test_case_750-manual.html
+|   |       |   |       name_test_case_751-manual.html
+|   |       |   |       name_test_case_752-manual.html
+|   |       |   |       name_test_case_753-manual.html
+|   |       |   |       name_test_case_754-manual.html
+|   |       |   |       name_test_case_755-manual.html
+|   |       |   |       name_test_case_756-manual.html
+|   |       |   |       name_test_case_757-manual.html
+|   |       |   |       name_test_case_758-manual.html
+|   |       |   |       name_test_case_759-manual.html
+|   |       |   |       name_test_case_760-manual.html
+|   |       |   |       name_test_case_761-manual.html
+|   |       |   |       name_test_case_762-manual.html
+|   |       |   |       name_text-label-embedded-combobox-manual.html
+|   |       |   |       name_text-label-embedded-menu-manual.html
+|   |       |   |       name_text-label-embedded-select-manual.html
+|   |       |   |       name_text-label-embedded-slider-manual.html
+|   |       |   |       name_text-label-embedded-spinbutton-manual.html
+|   |       |   |       name_text-title-manual.html
+|   |       |   |       
+|   |       |   \---name
+|   |       |       |   comp_embedded_control.html
+|   |       |       |   comp_hidden_not_referenced.html
+|   |       |       |   comp_host_language_label.html
+|   |       |       |   comp_label.html
+|   |       |       |   comp_labelledby.html
+|   |       |       |   comp_labelledby_hidden_nodes.html
+|   |       |       |   comp_name_from_content.html
+|   |       |       |   comp_text_node.html
+|   |       |       |   comp_tooltip.html
+|   |       |       |   
+|   |       |       \---shadowdom
+|   |       |               basic.html
+|   |       |               slot.html
+|   |       |               
+|   |       \---wai-aria
+|   |           \---scripts
+|   |                   manual.css
+|   |                   
+|   +---bidi
+|   |   |   csvReporter.ts
+|   |   |   expectationReporter.ts
+|   |   |   expectationUtil.ts
+|   |   |   playwright.config.ts
+|   |   |   README.md
+|   |   |   
+|   |   \---expectations
+|   |           bidi-chromium-library.txt
+|   |           bidi-chromium-page.txt
+|   |           moz-firefox-nightly-library.txt
+|   |           moz-firefox-nightly-page.txt
+|   |           
+|   +---components
+|   |   |   .gitignore
+|   |   |   test-all.spec.js
+|   |   |   
+|   |   +---ct-react-vite
+|   |   |   |   .gitignore
+|   |   |   |   index.html
+|   |   |   |   package.json
+|   |   |   |   playwright.config.ts
+|   |   |   |   tsconfig.json
+|   |   |   |   tsconfig.node.json
+|   |   |   |   vite.config.ts
+|   |   |   |   
+|   |   |   +---playwright
+|   |   |   |       index.html
+|   |   |   |       index.tsx
+|   |   |   |       
+|   |   |   +---src
+|   |   |   |   |   App.tsx
+|   |   |   |   |   main.tsx
+|   |   |   |   |   vite-env.d.ts
+|   |   |   |   |   
+|   |   |   |   +---assets
+|   |   |   |   |       favicon.svg
+|   |   |   |   |       iconfont.woff2
+|   |   |   |   |       index.css
+|   |   |   |   |       logo.svg
+|   |   |   |   |       
+|   |   |   |   +---components
+|   |   |   |   |       Button.tsx
+|   |   |   |   |       CheckChildrenProp.tsx
+|   |   |   |   |       ComponentAsProp.tsx
+|   |   |   |   |       Counter.tsx
+|   |   |   |   |       DefaultChildren.tsx
+|   |   |   |   |       EmptyFragment.tsx
+|   |   |   |   |       Fetcher.tsx
+|   |   |   |   |       MultipleChildren.tsx
+|   |   |   |   |       MultiRoot.tsx
+|   |   |   |   |       TitleWithFont.css
+|   |   |   |   |       TitleWithFont.tsx
+|   |   |   |   |       
+|   |   |   |   \---pages
+|   |   |   |           DashboardPage.tsx
+|   |   |   |           LoginPage.tsx
+|   |   |   |           
+|   |   |   \---tests
+|   |   |           callbacks.spec.tsx
+|   |   |           children.spec.tsx
+|   |   |           react-router.spec.tsx
+|   |   |           render.spec.tsx
+|   |   |           route.spec.tsx
+|   |   |           unmount.spec.tsx
+|   |   |           update.spec.tsx
+|   |   |           
+|   |   +---ct-react17
+|   |   |   |   .gitignore
+|   |   |   |   package.json
+|   |   |   |   playwright.config.ts
+|   |   |   |   README.md
+|   |   |   |   tsconfig.json
+|   |   |   |   
+|   |   |   +---playwright
+|   |   |   |       index.html
+|   |   |   |       index.tsx
+|   |   |   |       
+|   |   |   +---public
+|   |   |   |       favicon.ico
+|   |   |   |       index.html
+|   |   |   |       logo192.png
+|   |   |   |       logo512.png
+|   |   |   |       manifest.json
+|   |   |   |       robots.txt
+|   |   |   |       
+|   |   |   +---src
+|   |   |   |   |   App.tsx
+|   |   |   |   |   index.js
+|   |   |   |   |   react-app-env.d.ts
+|   |   |   |   |   
+|   |   |   |   +---assets
+|   |   |   |   |       index.css
+|   |   |   |   |       logo.svg
+|   |   |   |   |       
+|   |   |   |   +---components
+|   |   |   |   |       Button.tsx
+|   |   |   |   |       CheckChildrenProp.tsx
+|   |   |   |   |       Counter.tsx
+|   |   |   |   |       DefaultChildren.tsx
+|   |   |   |   |       DelayedData.tsx
+|   |   |   |   |       EmptyFragment.tsx
+|   |   |   |   |       Fetch.tsx
+|   |   |   |   |       MultipleChildren.tsx
+|   |   |   |   |       MultiRoot.tsx
+|   |   |   |   |       
+|   |   |   |   \---pages
+|   |   |   |           DashboardPage.tsx
+|   |   |   |           LoginPage.tsx
+|   |   |   |           
+|   |   |   \---tests
+|   |   |           callbacks.spec.tsx
+|   |   |           children.spec.tsx
+|   |   |           react-router.spec.tsx
+|   |   |           render.spec.tsx
+|   |   |           unmount.spec.tsx
+|   |   |           update.spec.tsx
+|   |   |           
+|   |   +---ct-svelte
+|   |   |   |   .gitignore
+|   |   |   |   package.json
+|   |   |   |   playwright.config.ts
+|   |   |   |   README.md
+|   |   |   |   rollup.config.js
+|   |   |   |   tsconfig.json
+|   |   |   |   
+|   |   |   +---playwright
+|   |   |   |       index.html
+|   |   |   |       index.ts
+|   |   |   |       
+|   |   |   +---public
+|   |   |   |       favicon.png
+|   |   |   |       index.html
+|   |   |   |       
+|   |   |   +---scripts
+|   |   |   |       setupTypeScript.js
+|   |   |   |       
+|   |   |   +---src
+|   |   |   |   |   App.svelte
+|   |   |   |   |   main.js
+|   |   |   |   |   
+|   |   |   |   +---assets
+|   |   |   |   |       index.css
+|   |   |   |   |       
+|   |   |   |   +---components
+|   |   |   |   |       Button.svelte
+|   |   |   |   |       Component.svelte
+|   |   |   |   |       Counter.svelte
+|   |   |   |   |       DefaultSlot.svelte
+|   |   |   |   |       Empty.svelte
+|   |   |   |   |       MultiRoot.svelte
+|   |   |   |   |       NamedSlots.svelte
+|   |   |   |   |       
+|   |   |   |   +---pages
+|   |   |   |   |       DashboardPage.svelte
+|   |   |   |   |       LoginPage.svelte
+|   |   |   |   |       
+|   |   |   |   \---store
+|   |   |   |           index.ts
+|   |   |   |           
+|   |   |   \---tests
+|   |   |           events.spec.ts
+|   |   |           render.spec.ts
+|   |   |           router.spec.ts
+|   |   |           slots.spec.ts
+|   |   |           unmount.spec.ts
+|   |   |           update.spec.ts
+|   |   |           
+|   |   +---ct-svelte-vite
+|   |   |   |   .eslintignore
+|   |   |   |   .gitignore
+|   |   |   |   index.html
+|   |   |   |   package.json
+|   |   |   |   playwright.config.ts
+|   |   |   |   README.md
+|   |   |   |   tsconfig.json
+|   |   |   |   tsconfig.node.json
+|   |   |   |   vite.config.ts
+|   |   |   |   
+|   |   |   +---playwright
+|   |   |   |       index.html
+|   |   |   |       index.ts
+|   |   |   |       svelte.config.js
+|   |   |   |       
+|   |   |   +---public
+|   |   |   |       favicon.ico
+|   |   |   |       
+|   |   |   +---src
+|   |   |   |   |   App.svelte
+|   |   |   |   |   main.ts
+|   |   |   |   |   vite-env.d.ts
+|   |   |   |   |   
+|   |   |   |   +---assets
+|   |   |   |   |       index.css
+|   |   |   |   |       
+|   |   |   |   +---components
+|   |   |   |   |       Button.svelte
+|   |   |   |   |       Context.svelte
+|   |   |   |   |       Counter.svelte
+|   |   |   |   |       DefaultSlot.svelte
+|   |   |   |   |       Empty.svelte
+|   |   |   |   |       MultiRoot.svelte
+|   |   |   |   |       NamedSlots.svelte
+|   |   |   |   |       
+|   |   |   |   +---pages
+|   |   |   |   |       DashboardPage.svelte
+|   |   |   |   |       LoginPage.svelte
+|   |   |   |   |       
+|   |   |   |   \---store
+|   |   |   |           index.ts
+|   |   |   |           
+|   |   |   \---tests
+|   |   |           events.spec.ts
+|   |   |           render.spec.ts
+|   |   |           router.spec.ts
+|   |   |           slots.spec.ts
+|   |   |           unmount.spec.ts
+|   |   |           update.spec.ts
+|   |   |           
+|   |   +---ct-vue-cli
+|   |   |   |   .eslintignore
+|   |   |   |   .gitignore
+|   |   |   |   babel.config.js
+|   |   |   |   package.json
+|   |   |   |   playwright.config.ts
+|   |   |   |   README.md
+|   |   |   |   tsconfig.app.json
+|   |   |   |   tsconfig.config.json
+|   |   |   |   tsconfig.json
+|   |   |   |   tsconfig.test.json
+|   |   |   |   vue.config.js
+|   |   |   |   vue.d.ts
+|   |   |   |   
+|   |   |   +---playwright
+|   |   |   |       index.html
+|   |   |   |       index.ts
+|   |   |   |       
+|   |   |   +---public
+|   |   |   |       favicon.ico
+|   |   |   |       index.html
+|   |   |   |       
+|   |   |   +---src
+|   |   |   |   |   App.vue
+|   |   |   |   |   main.js
+|   |   |   |   |   vue.d.ts
+|   |   |   |   |   
+|   |   |   |   +---assets
+|   |   |   |   |       index.css
+|   |   |   |   |       logo.png
+|   |   |   |   |       
+|   |   |   |   +---components
+|   |   |   |   |       Button.vue
+|   |   |   |   |       Component.vue
+|   |   |   |   |       Counter.vue
+|   |   |   |   |       DefaultSlot.vue
+|   |   |   |   |       EmptyTemplate.vue
+|   |   |   |   |       MultiRoot.vue
+|   |   |   |   |       NamedSlots.vue
+|   |   |   |   |       
+|   |   |   |   +---pages
+|   |   |   |   |       DashboardPage.vue
+|   |   |   |   |       LoginPage.vue
+|   |   |   |   |       
+|   |   |   |   \---router
+|   |   |   |           index.js
+|   |   |   |           
+|   |   |   \---tests
+|   |   |       +---events
+|   |   |       |       events.spec.ts
+|   |   |       |       events.spec.tsx
+|   |   |       |       
+|   |   |       +---render
+|   |   |       |       render.spec.ts
+|   |   |       |       render.spec.tsx
+|   |   |       |       
+|   |   |       +---slots
+|   |   |       |       slots.spec.ts
+|   |   |       |       slots.spec.tsx
+|   |   |       |       
+|   |   |       +---unmount
+|   |   |       |       unmount.spec.ts
+|   |   |       |       unmount.spec.tsx
+|   |   |       |       
+|   |   |       +---update
+|   |   |       |       update.spec.ts
+|   |   |       |       update.spec.tsx
+|   |   |       |       
+|   |   |       \---vue-router
+|   |   |               vue-router.spec.ts
+|   |   |               vue-router.spec.tsx
+|   |   |               
+|   |   \---ct-vue-vite
+|   |       |   .eslintignore
+|   |       |   .gitignore
+|   |       |   env.d.ts
+|   |       |   index.html
+|   |       |   package.json
+|   |       |   playwright.config.ts
+|   |       |   README.md
+|   |       |   tsconfig.json
+|   |       |   vite.config.js
+|   |       |   
+|   |       +---playwright
+|   |       |       index.html
+|   |       |       index.ts
+|   |       |       
+|   |       +---public
+|   |       |       favicon.ico
+|   |       |       
+|   |       +---src
+|   |       |   |   App.vue
+|   |       |   |   main.js
+|   |       |   |   
+|   |       |   +---assets
+|   |       |   |       index.css
+|   |       |   |       logo.svg
+|   |       |   |       
+|   |       |   +---components
+|   |       |   |       Button.vue
+|   |       |   |       Component.vue
+|   |       |   |       Counter.vue
+|   |       |   |       DefaultSlot.vue
+|   |       |   |       EmptyTemplate.vue
+|   |       |   |       MultiRoot.vue
+|   |       |   |       NamedSlots.vue
+|   |       |   |       SlotDefaultValue.vue
+|   |       |   |       
+|   |       |   +---pages
+|   |       |   |       DashboardPage.vue
+|   |       |   |       LoginPage.vue
+|   |       |   |       
+|   |       |   \---router
+|   |       |           index.ts
+|   |       |           
+|   |       \---tests
+|   |           +---events
+|   |           |       events.spec.js
+|   |           |       events.spec.ts
+|   |           |       events.spec.tsx
+|   |           |       
+|   |           +---render
+|   |           |       render.spec.js
+|   |           |       render.spec.ts
+|   |           |       render.spec.tsx
+|   |           |       
+|   |           +---slots
+|   |           |       slots.spec.js
+|   |           |       slots.spec.ts
+|   |           |       slots.spec.tsx
+|   |           |       
+|   |           +---unmount
+|   |           |       unmount.spec.js
+|   |           |       unmount.spec.ts
+|   |           |       unmount.spec.tsx
+|   |           |       
+|   |           +---update
+|   |           |       update.spec.js
+|   |           |       update.spec.ts
+|   |           |       update.spec.tsx
+|   |           |       
+|   |           \---vue-router
+|   |                   vue-router.spec.js
+|   |                   vue-router.spec.ts
+|   |                   vue-router.spec.tsx
+|   |                   
+|   +---config
+|   |   |   baseTest.ts
+|   |   |   browserTest.ts
+|   |   |   commonFixtures.ts
+|   |   |   comparator.ts
+|   |   |   debugControllerBackend.ts
+|   |   |   errors.ts
+|   |   |   ghaMarkdownReporter.ts
+|   |   |   platformFixtures.ts
+|   |   |   proxy.ts
+|   |   |   queryObjects.ts
+|   |   |   remote-server-impl.js
+|   |   |   remoteServer.ts
+|   |   |   serverFixtures.ts
+|   |   |   testMode.ts
+|   |   |   testModeFixtures.ts
+|   |   |   traceViewerFixtures.ts
+|   |   |   utils.ts
+|   |   |   
+|   |   \---testserver
+|   |           cert.pem
+|   |           index.ts
+|   |           key.pem
+|   |           san.cnf
+|   |           
+|   +---electron
+|   |   |   electron-app-args.js
+|   |   |   electron-app-pre-ready.js
+|   |   |   electron-app-ready-event.js
+|   |   |   electron-app.js
+|   |   |   electron-app.spec.ts
+|   |   |   electron-print-chromium-version.js
+|   |   |   electron-tracing.spec.ts
+|   |   |   electron-window-app-delayed-loadURL.js
+|   |   |   electron-window-app.js
+|   |   |   electron-window.spec.ts
+|   |   |   electronTest.ts
+|   |   |   globalSetup.ts
+|   |   |   index.js
+|   |   |   package.json
+|   |   |   playwright.config.ts
+|   |   |   
+|   |   \---assets
+|   |           imported.css
+|   |           index.html
+|   |           style.css
+|   |           
+|   +---image_tools
+|   |   |   fixtures.spec.ts
+|   |   |   unit.spec.ts
+|   |   |   utils.ts
+|   |   |   
+|   |   \---fixtures
+|   |       +---should-fail
+|   |       |   +---julia-ssim-trap
+|   |       |   |       1-actual.png
+|   |       |   |       1-expected.png
+|   |       |   |       README.md
+|   |       |   |       
+|   |       |   +---looks-same-tests
+|   |       |   |       blue-actual.png
+|   |       |   |       blue-expected.png
+|   |       |   |       green-actual.png
+|   |       |   |       green-expected.png
+|   |       |   |       no-caret-actual.png
+|   |       |   |       no-caret-expected.png
+|   |       |   |       README.md
+|   |       |   |       red-actual.png
+|   |       |   |       red-expected.png
+|   |       |   |       
+|   |       |   +---original-ssim-trap
+|   |       |   |       README.md
+|   |       |   |       sample-actual.png
+|   |       |   |       sample-expected.png
+|   |       |   |       
+|   |       |   \---trivial
+|   |       |           equal-luma-actual.png
+|   |       |           equal-luma-expected.png
+|   |       |           opposite-actual.png
+|   |       |           opposite-expected.png
+|   |       |           README.md
+|   |       |           single-red-pixel-actual.png
+|   |       |           single-red-pixel-expected.png
+|   |       |           
+|   |       \---should-match
+|   |           +---crbug-919955
+|   |           |       example-1-actual.png
+|   |           |       example-1-expected.png
+|   |           |       example-2-actual.png
+|   |           |       example-2-expected.png
+|   |           |       README.md
+|   |           |       
+|   |           +---looks-same-tests
+|   |           |       antialiasing-actual.png
+|   |           |       antialiasing-expected.png
+|   |           |       antialiasing-tolerance-1-actual.png
+|   |           |       antialiasing-tolerance-1-expected.png
+|   |           |       antialiasing-tolerance-2-actual.png
+|   |           |       antialiasing-tolerance-2-expected.png
+|   |           |       README.md
+|   |           |       
+|   |           +---tiny-antialiasing-sample
+|   |           |       README.md
+|   |           |       tiny-actual.png
+|   |           |       tiny-expected.png
+|   |           |       
+|   |           +---trivial
+|   |           |       black-actual.png
+|   |           |       black-expected.png
+|   |           |       README.md
+|   |           |       white-actual.png
+|   |           |       white-expected.png
+|   |           |       
+|   |           \---webkit-rendering-artifacts
+|   |                   README.md
+|   |                   webkit-corner-2x-actual.png
+|   |                   webkit-corner-2x-expected.png
+|   |                   webkit-corner-pixel-actual.png
+|   |                   webkit-corner-pixel-expected.png
+|   |                   webkit-four-pixels-actual.png
+|   |                   webkit-four-pixels-expected.png
+|   |                   webkit-pixel-actual.png
+|   |                   webkit-pixel-expected.png
+|   |                   
+|   +---installation
+|   |   |   concurrent-download.spec.ts
+|   |   |   connect-to-selenium.spec.ts
+|   |   |   driver-should-work.spec.ts
+|   |   |   globalSetup.ts
+|   |   |   npm-installs-local-packages.spec.ts
+|   |   |   npmTest.ts
+|   |   |   npx-global.spec.ts
+|   |   |   playwright-cdn.spec.ts
+|   |   |   playwright-cli-install-should-work.spec.ts
+|   |   |   playwright-cli.spec.ts
+|   |   |   playwright-component-testing.spec.ts
+|   |   |   playwright-electron-should-work.spec.ts
+|   |   |   playwright-packages-install-behavior.spec.ts
+|   |   |   playwright-should-work-with-relative-browsers-path.spec.ts
+|   |   |   playwright-should-work-with-relative-home-path.spec.ts
+|   |   |   playwright-test-package-managers.spec.ts
+|   |   |   playwright-test-plugin.spec.ts
+|   |   |   playwright.config.ts
+|   |   |   registry.ts
+|   |   |   screencast.spec.ts
+|   |   |   skip-browser-download.spec.ts
+|   |   |   typescript-types.spec.ts
+|   |   |   validate-dependencies.spec.ts
+|   |   |   
+|   |   +---fixture-scripts
+|   |   |       browser-only.js
+|   |   |       docker.spec.js
+|   |   |       download-chromedriver.js
+|   |   |       download-selenium.js
+|   |   |       driver-client-sigint.js
+|   |   |       driver-client.js
+|   |   |       electron-app.js
+|   |   |       esm-playwright-chromium.mjs
+|   |   |       esm-playwright-firefox.mjs
+|   |   |       esm-playwright-test.mjs
+|   |   |       esm-playwright-webkit.mjs
+|   |   |       esm-playwright.mjs
+|   |   |       esm.mjs
+|   |   |       failing.spec.js
+|   |   |       inspector-custom-executable.js
+|   |   |       playwright-test-plugin-types.ts
+|   |   |       playwright-test-types.ts
+|   |   |       plugin.spec.ts
+|   |   |       read-json-report.js
+|   |   |       sample.spec.js
+|   |   |       sanity-electron.js
+|   |   |       sanity.js
+|   |   |       screencast.js
+|   |   |       validate-dependencies-skip-executable-path.js
+|   |   |       
+|   |   \---playwright-test-plugin
+|   |           .gitignore
+|   |           .npmignore
+|   |           index.ts
+|   |           package.json
+|   |           tsconfig.json
+|   |           
+|   +---library
+|   |   |   beforeunload.spec.ts
+|   |   |   browser.spec.ts
+|   |   |   browsercontext-add-cookies.spec.ts
+|   |   |   browsercontext-add-init-script.spec.ts
+|   |   |   browsercontext-base-url.spec.ts
+|   |   |   browsercontext-basic.spec.ts
+|   |   |   browsercontext-clearcookies.spec.ts
+|   |   |   browsercontext-cookies-third-party.spec.ts
+|   |   |   browsercontext-cookies.spec.ts
+|   |   |   browsercontext-credentials.spec.ts
+|   |   |   browsercontext-csp.spec.ts
+|   |   |   browsercontext-device.spec.ts
+|   |   |   browsercontext-dsf.spec.ts
+|   |   |   browsercontext-events.spec.ts
+|   |   |   browsercontext-expose-function.spec.ts
+|   |   |   browsercontext-fetch-algorithms.spec.ts
+|   |   |   browsercontext-fetch-happy-eyeballs.spec.ts
+|   |   |   browsercontext-fetch.spec.ts
+|   |   |   browsercontext-har.spec.ts
+|   |   |   browsercontext-locale.spec.ts
+|   |   |   browsercontext-network-event.spec.ts
+|   |   |   browsercontext-page-event.spec.ts
+|   |   |   browsercontext-pages.spec.ts
+|   |   |   browsercontext-proxy.spec.ts
+|   |   |   browsercontext-reuse.spec.ts
+|   |   |   browsercontext-route.spec.ts
+|   |   |   browsercontext-service-worker-policy.spec.ts
+|   |   |   browsercontext-set-extra-http-headers.spec.ts
+|   |   |   browsercontext-storage-state.spec.ts
+|   |   |   browsercontext-strict.spec.ts
+|   |   |   browsercontext-timezone-id.spec.ts
+|   |   |   browsercontext-user-agent.spec.ts
+|   |   |   browsercontext-viewport-mobile.spec.ts
+|   |   |   browsercontext-viewport.spec.ts
+|   |   |   browsertype-basic.spec.ts
+|   |   |   browsertype-connect.spec.ts
+|   |   |   browsertype-launch-selenium.spec.ts
+|   |   |   browsertype-launch-server.spec.ts
+|   |   |   browsertype-launch.spec.ts
+|   |   |   capabilities.spec.ts
+|   |   |   channels.spec.ts
+|   |   |   client-certificates.spec.ts
+|   |   |   component-parser.spec.ts
+|   |   |   css-parser.spec.ts
+|   |   |   debug-controller.spec.ts
+|   |   |   defaultbrowsercontext-1.spec.ts
+|   |   |   defaultbrowsercontext-2.spec.ts
+|   |   |   download.spec.ts
+|   |   |   downloads-path.spec.ts
+|   |   |   emulation-focus.spec.ts
+|   |   |   favicon.spec.ts
+|   |   |   fetch-proxy.spec.ts
+|   |   |   geolocation.spec.ts
+|   |   |   global-fetch-cookie.spec.ts
+|   |   |   global-fetch.spec.ts
+|   |   |   har.spec.ts
+|   |   |   headful.spec.ts
+|   |   |   hit-target.spec.ts
+|   |   |   ignorehttpserrors.spec.ts
+|   |   |   launcher.spec.ts
+|   |   |   locator-dispatchevent-touch.spec.ts
+|   |   |   locator-generator.spec.ts
+|   |   |   logger.spec.ts
+|   |   |   modernizr.spec.ts
+|   |   |   multiclient.spec.ts
+|   |   |   page-clock.frozen.spec.ts
+|   |   |   page-clock.spec.ts
+|   |   |   page-close.spec.ts
+|   |   |   page-event-crash.spec.ts
+|   |   |   pdf.spec.ts
+|   |   |   perform-task.spec.ts
+|   |   |   perform-task.spec.ts-cache.json
+|   |   |   permissions.spec.ts
+|   |   |   playwright.config.ts
+|   |   |   popup.spec.ts
+|   |   |   proxy-pattern.spec.ts
+|   |   |   proxy.spec.ts
+|   |   |   resource-timing.spec.ts
+|   |   |   role-utils.spec.ts
+|   |   |   route-web-socket.spec.ts
+|   |   |   screenshot.spec.ts
+|   |   |   selector-generator.spec.ts
+|   |   |   selectors-register.spec.ts
+|   |   |   shared-worker.spec.ts
+|   |   |   signals.spec.ts
+|   |   |   slowmo.spec.ts
+|   |   |   tap.spec.ts
+|   |   |   trace-viewer.spec.ts
+|   |   |   tracing.spec.ts
+|   |   |   unroute-behavior.spec.ts
+|   |   |   video.spec.ts
+|   |   |   web-socket.spec.ts
+|   |   |   
+|   |   +---chromium
+|   |   |   |   bfcache.spec.ts
+|   |   |   |   chromium.spec.ts
+|   |   |   |   connect-over-cdp.spec.ts
+|   |   |   |   css-coverage.spec.ts
+|   |   |   |   disable-web-security.spec.ts
+|   |   |   |   extensions.spec.ts
+|   |   |   |   js-coverage.spec.ts
+|   |   |   |   launcher.spec.ts
+|   |   |   |   oopif.spec.ts
+|   |   |   |   session.spec.ts
+|   |   |   |   tracing.spec.ts
+|   |   |   |   
+|   |   |   \---oopif.spec.ts-snapshots
+|   |   |           screenshot-oopif-chromium.png
+|   |   |           
+|   |   +---emulation-focus.spec.ts-snapshots
+|   |   |       grid-cell-0-chromium.png
+|   |   |       grid-cell-0-firefox.png
+|   |   |       grid-cell-0-moz-firefox-nightly.png
+|   |   |       grid-cell-0-webkit.png
+|   |   |       screenshot-sanity-chromium.png
+|   |   |       screenshot-sanity-firefox.png
+|   |   |       screenshot-sanity-moz-firefox-nightly.png
+|   |   |       screenshot-sanity-webkit.png
+|   |   |       
+|   |   +---events
+|   |   |       add-listeners.spec.ts
+|   |   |       check-listener-leaks.spec.ts
+|   |   |       events-list.spec.ts
+|   |   |       listener-count.spec.ts
+|   |   |       listeners-side-effects.spec.ts
+|   |   |       listeners.spec.ts
+|   |   |       max-listeners.spec.ts
+|   |   |       method-names.spec.ts
+|   |   |       modify-in-emit.spec.ts
+|   |   |       num-args.spec.ts
+|   |   |       once.spec.ts
+|   |   |       prepend.spec.ts
+|   |   |       remove-all-listeners-wait.spec.ts
+|   |   |       remove-all-listeners.spec.ts
+|   |   |       remove-listeners.spec.ts
+|   |   |       set-max-listeners-side-effects.spec.ts
+|   |   |       special-event-names.spec.ts
+|   |   |       subclass.spec.ts
+|   |   |       symbols.spec.ts
+|   |   |       utils.ts
+|   |   |       
+|   |   +---firefox
+|   |   |       launcher.spec.ts
+|   |   |       
+|   |   +---inspector
+|   |   |       cli-codegen-1.spec.ts
+|   |   |       cli-codegen-2.spec.ts
+|   |   |       cli-codegen-3.spec.ts
+|   |   |       cli-codegen-aria.spec.ts
+|   |   |       cli-codegen-csharp.spec.ts
+|   |   |       cli-codegen-java.spec.ts
+|   |   |       cli-codegen-javascript.spec.ts
+|   |   |       cli-codegen-pick-locator.spec.ts
+|   |   |       cli-codegen-pytest.spec.ts
+|   |   |       cli-codegen-python-async.spec.ts
+|   |   |       cli-codegen-python.spec.ts
+|   |   |       cli-codegen-test.spec.ts
+|   |   |       console-api.spec.ts
+|   |   |       inspectorTest.ts
+|   |   |       pause-helper.ts
+|   |   |       pause.spec.ts
+|   |   |       recorder-api.spec.ts
+|   |   |       title.spec.ts
+|   |   |       
+|   |   +---screenshot.spec.ts-snapshots
+|   |   |       element-larger-than-viewport-dsf-chromium.png
+|   |   |       element-larger-than-viewport-dsf-css-size-chromium.png
+|   |   |       element-larger-than-viewport-dsf-css-size-firefox.png
+|   |   |       element-larger-than-viewport-dsf-css-size-moz-firefox-nightly.png
+|   |   |       element-larger-than-viewport-dsf-css-size-webkit.png
+|   |   |       element-larger-than-viewport-dsf-firefox.png
+|   |   |       element-larger-than-viewport-dsf-moz-firefox-nightly.png
+|   |   |       element-larger-than-viewport-dsf-webkit.png
+|   |   |       element-screenshot-page-screenshot-should-capture-css-transform-with-device-pixels-1-chromium.png
+|   |   |       element-screenshot-page-screenshot-should-capture-css-transform-with-device-pixels-1-firefox.png
+|   |   |       element-screenshot-page-screenshot-should-capture-css-transform-with-device-pixels-1-moz-firefox-nightly.png
+|   |   |       grid-cell-0-chromium.png
+|   |   |       grid-cell-0-firefox.png
+|   |   |       grid-cell-0-moz-firefox-nightly.png
+|   |   |       grid-cell-0-webkit.png
+|   |   |       grid-cell-1-chromium.png
+|   |   |       grid-cell-1-firefox.png
+|   |   |       grid-cell-1-moz-firefox-nightly.png
+|   |   |       grid-cell-1-webkit.png
+|   |   |       hanging-main-resource-firefox.png
+|   |   |       hanging-main-resource-moz-firefox-nightly.png
+|   |   |       hanging-main-resource-webkit.png
+|   |   |       screenshot-device-scale-factor-chromium.png
+|   |   |       screenshot-device-scale-factor-clip-chromium.png
+|   |   |       screenshot-device-scale-factor-clip-css-size-chromium.png
+|   |   |       screenshot-device-scale-factor-clip-css-size-firefox.png
+|   |   |       screenshot-device-scale-factor-clip-css-size-moz-firefox-nightly.png
+|   |   |       screenshot-device-scale-factor-clip-css-size-webkit.png
+|   |   |       screenshot-device-scale-factor-clip-firefox.png
+|   |   |       screenshot-device-scale-factor-clip-moz-firefox-nightly.png
+|   |   |       screenshot-device-scale-factor-clip-webkit.png
+|   |   |       screenshot-device-scale-factor-css-size-chromium.png
+|   |   |       screenshot-device-scale-factor-css-size-firefox.png
+|   |   |       screenshot-device-scale-factor-css-size-moz-firefox-nightly.png
+|   |   |       screenshot-device-scale-factor-css-size-webkit.png
+|   |   |       screenshot-device-scale-factor-firefox.png
+|   |   |       screenshot-device-scale-factor-moz-firefox-nightly.png
+|   |   |       screenshot-device-scale-factor-webkit.png
+|   |   |       screenshot-element-mobile-chromium.png
+|   |   |       screenshot-element-mobile-dsf-chromium.png
+|   |   |       screenshot-element-mobile-dsf-moz-firefox-nightly.png
+|   |   |       screenshot-element-mobile-dsf-webkit.png
+|   |   |       screenshot-element-mobile-moz-firefox-nightly.png
+|   |   |       screenshot-element-mobile-webkit.png
+|   |   |       screenshot-mobile-chromium.png
+|   |   |       screenshot-mobile-clip-chromium.png
+|   |   |       screenshot-mobile-clip-moz-firefox-nightly.png
+|   |   |       screenshot-mobile-clip-webkit.png
+|   |   |       screenshot-mobile-fullpage-chromium.png
+|   |   |       screenshot-mobile-fullpage-moz-firefox-nightly.png
+|   |   |       screenshot-mobile-fullpage-webkit.png
+|   |   |       screenshot-mobile-moz-firefox-nightly.png
+|   |   |       screenshot-mobile-webkit.png
+|   |   |       
+|   |   \---unit
+|   |           clock.spec.ts
+|   |           codegen.spec.ts
+|   |           sequence.spec.ts
+|   |           
+|   +---mcp
+|   |   |   autowait.spec.ts
+|   |   |   browser.eval.ts
+|   |   |   capabilities.spec.ts
+|   |   |   cdp.spec.ts
+|   |   |   click.spec.ts
+|   |   |   clipboard.spec.ts
+|   |   |   config.spec.ts
+|   |   |   console.spec.ts
+|   |   |   core.spec.ts
+|   |   |   device.spec.ts
+|   |   |   dialogs.spec.ts
+|   |   |   evaluate.spec.ts
+|   |   |   files.spec.ts
+|   |   |   fixtures.ts
+|   |   |   form.spec.ts
+|   |   |   generator.spec.ts
+|   |   |   headed.spec.ts
+|   |   |   http.spec.ts
+|   |   |   iframes.spec.ts
+|   |   |   init-agents.spec.ts
+|   |   |   init-page.spec.ts
+|   |   |   init-script.spec.ts
+|   |   |   install.spec.ts
+|   |   |   launch.spec.ts
+|   |   |   library.spec.ts
+|   |   |   network.spec.ts
+|   |   |   pdf.spec.ts
+|   |   |   planner.spec.ts
+|   |   |   playwright.config.ts
+|   |   |   request-blocking.spec.ts
+|   |   |   roots.spec.ts
+|   |   |   run-code.spec.ts
+|   |   |   screenshot.spec.ts
+|   |   |   secrets.spec.ts
+|   |   |   seed-default-project.spec.ts
+|   |   |   session-log.spec.ts
+|   |   |   snapshot-diff.spec.ts
+|   |   |   snapshot-mode.spec.ts
+|   |   |   sse.spec.ts
+|   |   |   tabs.spec.ts
+|   |   |   test-debug.spec.ts
+|   |   |   test-list.spec.ts
+|   |   |   test-run.spec.ts
+|   |   |   test-setup.spec.ts
+|   |   |   timeouts.spec.ts
+|   |   |   tracing.spec.ts
+|   |   |   type.spec.ts
+|   |   |   verify.spec.ts
+|   |   |   video.spec.ts
+|   |   |   wait.spec.ts
+|   |   |   webdriver.spec.ts
+|   |   |   
+|   |   \---__cache__
+|   |       \---copilot
+|   |               mcp-browser-eval-fill-the-form-repeat0.json
+|   |               mcp-browser-eval-fill-the-form-repeat1.json
+|   |               mcp-browser-eval-fill-the-form-repeat2.json
+|   |               
+|   +---page
+|   |   |   elementhandle-bounding-box.spec.ts
+|   |   |   elementhandle-click.spec.ts
+|   |   |   elementhandle-content-frame.spec.ts
+|   |   |   elementhandle-convenience.spec.ts
+|   |   |   elementhandle-eval-on-selector.spec.ts
+|   |   |   elementhandle-misc.spec.ts
+|   |   |   elementhandle-owner-frame.spec.ts
+|   |   |   elementhandle-press.spec.ts
+|   |   |   elementhandle-query-selector.spec.ts
+|   |   |   elementhandle-screenshot.spec.ts
+|   |   |   elementhandle-scroll-into-view.spec.ts
+|   |   |   elementhandle-select-text.spec.ts
+|   |   |   elementhandle-type.spec.ts
+|   |   |   elementhandle-wait-for-element-state.spec.ts
+|   |   |   eval-on-selector-all.spec.ts
+|   |   |   eval-on-selector.spec.ts
+|   |   |   expect-boolean.spec.ts
+|   |   |   expect-matcher-result.spec.ts
+|   |   |   expect-misc.spec.ts
+|   |   |   expect-timeout.spec.ts
+|   |   |   expect-to-have-accessible.spec.ts
+|   |   |   expect-to-have-text.spec.ts
+|   |   |   expect-to-have-value.spec.ts
+|   |   |   frame-evaluate.spec.ts
+|   |   |   frame-frame-element.spec.ts
+|   |   |   frame-goto.spec.ts
+|   |   |   frame-hierarchy.spec.ts
+|   |   |   interception.spec.ts
+|   |   |   jshandle-as-element.spec.ts
+|   |   |   jshandle-evaluate.spec.ts
+|   |   |   jshandle-json-value.spec.ts
+|   |   |   jshandle-properties.spec.ts
+|   |   |   jshandle-to-string.spec.ts
+|   |   |   locator-click.spec.ts
+|   |   |   locator-convenience.spec.ts
+|   |   |   locator-element-handle.spec.ts
+|   |   |   locator-evaluate.spec.ts
+|   |   |   locator-frame.spec.ts
+|   |   |   locator-highlight.spec.ts
+|   |   |   locator-is-visible.spec.ts
+|   |   |   locator-list.spec.ts
+|   |   |   locator-misc-1.spec.ts
+|   |   |   locator-misc-2.spec.ts
+|   |   |   locator-query.spec.ts
+|   |   |   matchers.misc.spec.ts
+|   |   |   network-post-data.spec.ts
+|   |   |   page-add-init-script.spec.ts
+|   |   |   page-add-locator-handler.spec.ts
+|   |   |   page-add-script-tag.spec.ts
+|   |   |   page-add-style-tag.spec.ts
+|   |   |   page-aria-snapshot-ai.spec.ts
+|   |   |   page-aria-snapshot.spec.ts
+|   |   |   page-autowaiting-basic.spec.ts
+|   |   |   page-autowaiting-no-hang.spec.ts
+|   |   |   page-basic.spec.ts
+|   |   |   page-check.spec.ts
+|   |   |   page-click-during-navigation.spec.ts
+|   |   |   page-click-react.spec.ts
+|   |   |   page-click-scroll.spec.ts
+|   |   |   page-click-timeout-1.spec.ts
+|   |   |   page-click-timeout-2.spec.ts
+|   |   |   page-click-timeout-3.spec.ts
+|   |   |   page-click-timeout-4.spec.ts
+|   |   |   page-click.spec.ts
+|   |   |   page-dialog.spec.ts
+|   |   |   page-dispatchevent.spec.ts
+|   |   |   page-drag.spec.ts
+|   |   |   page-emulate-media.spec.ts
+|   |   |   page-evaluate-handle.spec.ts
+|   |   |   page-evaluate-no-stall.spec.ts
+|   |   |   page-evaluate.spec.ts
+|   |   |   page-event-console.spec.ts
+|   |   |   page-event-load.spec.ts
+|   |   |   page-event-network.spec.ts
+|   |   |   page-event-pageerror.spec.ts
+|   |   |   page-event-popup.spec.ts
+|   |   |   page-event-request.spec.ts
+|   |   |   page-expose-function.spec.ts
+|   |   |   page-filechooser.spec.ts
+|   |   |   page-fill.spec.ts
+|   |   |   page-focus.spec.ts
+|   |   |   page-goto.spec.ts
+|   |   |   page-history.spec.ts
+|   |   |   page-keyboard.spec.ts
+|   |   |   page-leaks.spec.ts
+|   |   |   page-listeners.spec.ts
+|   |   |   page-mouse.spec.ts
+|   |   |   page-navigation.spec.ts
+|   |   |   page-network-idle.spec.ts
+|   |   |   page-network-request.spec.ts
+|   |   |   page-network-response.spec.ts
+|   |   |   page-network-sizes.spec.ts
+|   |   |   page-request-continue.spec.ts
+|   |   |   page-request-fallback.spec.ts
+|   |   |   page-request-fulfill.spec.ts
+|   |   |   page-request-gc.spec.ts
+|   |   |   page-request-intercept.spec.ts
+|   |   |   page-route.spec.ts
+|   |   |   page-screenshot.spec.ts
+|   |   |   page-select-option.spec.ts
+|   |   |   page-set-content.spec.ts
+|   |   |   page-set-extra-http-headers.spec.ts
+|   |   |   page-set-input-files.spec.ts
+|   |   |   page-strict.spec.ts
+|   |   |   page-wait-for-function.spec.ts
+|   |   |   page-wait-for-load-state.spec.ts
+|   |   |   page-wait-for-navigation.spec.ts
+|   |   |   page-wait-for-request.spec.ts
+|   |   |   page-wait-for-response.spec.ts
+|   |   |   page-wait-for-selector-1.spec.ts
+|   |   |   page-wait-for-selector-2.spec.ts
+|   |   |   page-wait-for-url.spec.ts
+|   |   |   pageTest.ts
+|   |   |   pageTestApi.ts
+|   |   |   queryselector.spec.ts
+|   |   |   retarget.spec.ts
+|   |   |   selectors-css.spec.ts
+|   |   |   selectors-frame.spec.ts
+|   |   |   selectors-get-by.spec.ts
+|   |   |   selectors-misc.spec.ts
+|   |   |   selectors-react.spec.ts
+|   |   |   selectors-register.spec.ts
+|   |   |   selectors-role.spec.ts
+|   |   |   selectors-text.spec.ts
+|   |   |   selectors-vue.spec.ts
+|   |   |   to-match-aria-snapshot.spec.ts
+|   |   |   wheel.spec.ts
+|   |   |   workers.spec.ts
+|   |   |   
+|   |   +---elementhandle-screenshot.spec.ts-snapshots
+|   |   |       screenshot-element-bounding-box-bidi-chromium.png
+|   |   |       screenshot-element-bounding-box-chromium.png
+|   |   |       screenshot-element-bounding-box-firefox.png
+|   |   |       screenshot-element-bounding-box-moz-firefox-nightly.png
+|   |   |       screenshot-element-bounding-box-webkit.png
+|   |   |       screenshot-element-fractional-bidi-chromium.png
+|   |   |       screenshot-element-fractional-chromium.png
+|   |   |       screenshot-element-fractional-firefox.png
+|   |   |       screenshot-element-fractional-moz-firefox-nightly.png
+|   |   |       screenshot-element-fractional-offset-bidi-chromium.png
+|   |   |       screenshot-element-fractional-offset-chromium.png
+|   |   |       screenshot-element-fractional-offset-firefox.png
+|   |   |       screenshot-element-fractional-offset-moz-firefox-nightly.png
+|   |   |       screenshot-element-fractional-offset-webkit.png
+|   |   |       screenshot-element-fractional-webkit.png
+|   |   |       screenshot-element-larger-than-viewport-bidi-chromium.png
+|   |   |       screenshot-element-larger-than-viewport-chromium.png
+|   |   |       screenshot-element-larger-than-viewport-firefox.png
+|   |   |       screenshot-element-larger-than-viewport-moz-firefox-nightly.png
+|   |   |       screenshot-element-larger-than-viewport-webkit.png
+|   |   |       screenshot-element-padding-border-bidi-chromium.png
+|   |   |       screenshot-element-padding-border-chromium.png
+|   |   |       screenshot-element-padding-border-firefox.png
+|   |   |       screenshot-element-padding-border-moz-firefox-nightly.png
+|   |   |       screenshot-element-padding-border-webkit.png
+|   |   |       screenshot-element-rotate-bidi-chromium.png
+|   |   |       screenshot-element-rotate-chromium.png
+|   |   |       screenshot-element-rotate-firefox.png
+|   |   |       screenshot-element-rotate-moz-firefox-nightly.png
+|   |   |       screenshot-element-rotate-webkit.png
+|   |   |       screenshot-element-scrolled-into-view-bidi-chromium.png
+|   |   |       screenshot-element-scrolled-into-view-chromium.png
+|   |   |       screenshot-element-scrolled-into-view-firefox.png
+|   |   |       screenshot-element-scrolled-into-view-moz-firefox-nightly.png
+|   |   |       screenshot-element-scrolled-into-view-webkit.png
+|   |   |       
+|   |   +---expect-matcher-result.spec.ts-snapshots
+|   |   |       screenshot-sanity-chromium.png
+|   |   |       screenshot-sanity-firefox.png
+|   |   |       screenshot-sanity-moz-firefox-nightly.png
+|   |   |       screenshot-sanity-webkit.png
+|   |   |       
+|   |   +---locator-misc-2.spec.ts-snapshots
+|   |   |       screenshot-element-bounding-box-chromium.png
+|   |   |       screenshot-element-bounding-box-firefox.png
+|   |   |       screenshot-element-bounding-box-moz-firefox-nightly.png
+|   |   |       screenshot-element-bounding-box-webkit.png
+|   |   |       
+|   |   +---page-add-locator-handler.spec.ts-snapshots
+|   |   |       screenshot-grid-chromium.png
+|   |   |       screenshot-grid-firefox.png
+|   |   |       screenshot-grid-moz-firefox-nightly.png
+|   |   |       screenshot-grid-webkit.png
+|   |   |       
+|   |   +---page-request-fulfill.spec.ts-snapshots
+|   |   |       mock-binary-response-chromium.png
+|   |   |       mock-binary-response-firefox.png
+|   |   |       mock-binary-response-moz-firefox-nightly.png
+|   |   |       mock-binary-response-webkit.png
+|   |   |       mock-svg-chromium.png
+|   |   |       mock-svg-firefox.png
+|   |   |       mock-svg-moz-firefox-nightly.png
+|   |   |       mock-svg-webkit.png
+|   |   |       
+|   |   \---page-screenshot.spec.ts-snapshots
+|   |           canvas-changes-0-bidi-chromium.png
+|   |           canvas-changes-0-chromium.png
+|   |           canvas-changes-0-firefox.png
+|   |           canvas-changes-0-moz-firefox-nightly.png
+|   |           canvas-changes-0-webkit.png
+|   |           canvas-changes-1-bidi-chromium.png
+|   |           canvas-changes-1-chromium.png
+|   |           canvas-changes-1-firefox.png
+|   |           canvas-changes-1-moz-firefox-nightly.png
+|   |           canvas-changes-1-webkit.png
+|   |           canvas-changes-2-bidi-chromium.png
+|   |           canvas-changes-2-chromium.png
+|   |           canvas-changes-2-firefox.png
+|   |           canvas-changes-2-moz-firefox-nightly.png
+|   |           canvas-changes-2-webkit.png
+|   |           grid-cell-1-bidi-chromium.png
+|   |           grid-cell-1-chromium.png
+|   |           grid-cell-1-firefox.png
+|   |           grid-cell-1-moz-firefox-nightly.png
+|   |           grid-cell-1-webkit.png
+|   |           hide-should-work-bidi-chromium.png
+|   |           hide-should-work-chromium.png
+|   |           hide-should-work-firefox.png
+|   |           hide-should-work-moz-firefox-nightly.png
+|   |           hide-should-work-webkit.png
+|   |           mask-color-should-work-bidi-chromium.png
+|   |           mask-color-should-work-chromium.png
+|   |           mask-color-should-work-firefox.png
+|   |           mask-color-should-work-moz-firefox-nightly.png
+|   |           mask-color-should-work-webkit.png
+|   |           mask-should-work-bidi-chromium.png
+|   |           mask-should-work-chromium.png
+|   |           mask-should-work-firefox.png
+|   |           mask-should-work-moz-firefox-nightly.png
+|   |           mask-should-work-webkit.png
+|   |           mask-should-work-with-elementhandle-bidi-chromium.png
+|   |           mask-should-work-with-elementhandle-chromium.png
+|   |           mask-should-work-with-elementhandle-firefox.png
+|   |           mask-should-work-with-elementhandle-moz-firefox-nightly.png
+|   |           mask-should-work-with-elementhandle-webkit.png
+|   |           mask-should-work-with-locator-bidi-chromium.png
+|   |           mask-should-work-with-locator-chromium.png
+|   |           mask-should-work-with-locator-firefox.png
+|   |           mask-should-work-with-locator-moz-firefox-nightly.png
+|   |           mask-should-work-with-locator-webkit.png
+|   |           page-screenshot-should-capture-css-transform-1-bidi-chromium.png
+|   |           page-screenshot-should-capture-css-transform-1-chromium.png
+|   |           page-screenshot-should-capture-css-transform-1-firefox.png
+|   |           page-screenshot-should-capture-css-transform-1-moz-firefox-nightly.png
+|   |           remove-should-work-bidi-chromium.png
+|   |           remove-should-work-chromium.png
+|   |           remove-should-work-firefox.png
+|   |           remove-should-work-moz-firefox-nightly.png
+|   |           remove-should-work-webkit.png
+|   |           screenshot-canvas-bidi-chromium.png
+|   |           screenshot-canvas-chromium.png
+|   |           screenshot-canvas-firefox.png
+|   |           screenshot-canvas-moz-firefox-nightly.png
+|   |           screenshot-canvas-text-bidi-chromium.png
+|   |           screenshot-canvas-text-chromium.png
+|   |           screenshot-canvas-text-firefox.png
+|   |           screenshot-canvas-text-moz-firefox-nightly.png
+|   |           screenshot-canvas-text-webkit.png
+|   |           screenshot-canvas-webkit.png
+|   |           screenshot-clip-odd-size-bidi-chromium.png
+|   |           screenshot-clip-odd-size-chromium.png
+|   |           screenshot-clip-odd-size-firefox.png
+|   |           screenshot-clip-odd-size-moz-firefox-nightly.png
+|   |           screenshot-clip-odd-size-webkit.png
+|   |           screenshot-clip-rect-bidi-chromium.png
+|   |           screenshot-clip-rect-chromium.png
+|   |           screenshot-clip-rect-firefox.png
+|   |           screenshot-clip-rect-moz-firefox-nightly.png
+|   |           screenshot-clip-rect-webkit.png
+|   |           screenshot-grid-fullpage-bidi-chromium.png
+|   |           screenshot-grid-fullpage-chromium.png
+|   |           screenshot-grid-fullpage-firefox.png
+|   |           screenshot-grid-fullpage-mask-outside-viewport-bidi-chromium.png
+|   |           screenshot-grid-fullpage-mask-outside-viewport-chromium.png
+|   |           screenshot-grid-fullpage-mask-outside-viewport-firefox.png
+|   |           screenshot-grid-fullpage-mask-outside-viewport-moz-firefox-nightly.png
+|   |           screenshot-grid-fullpage-mask-outside-viewport-webkit.png
+|   |           screenshot-grid-fullpage-moz-firefox-nightly.png
+|   |           screenshot-grid-fullpage-webkit.png
+|   |           screenshot-iframe-bidi-chromium.png
+|   |           screenshot-iframe-chromium.png
+|   |           screenshot-iframe-firefox.png
+|   |           screenshot-iframe-moz-firefox-nightly.png
+|   |           screenshot-iframe-webkit.png
+|   |           screenshot-offscreen-clip-bidi-chromium.png
+|   |           screenshot-offscreen-clip-chromium.png
+|   |           screenshot-offscreen-clip-firefox.png
+|   |           screenshot-offscreen-clip-moz-firefox-nightly.png
+|   |           screenshot-offscreen-clip-webkit.png
+|   |           screenshot-sanity-bidi-chromium.png
+|   |           screenshot-sanity-chromium.png
+|   |           screenshot-sanity-firefox.png
+|   |           screenshot-sanity-moz-firefox-nightly.png
+|   |           screenshot-sanity-webkit.png
+|   |           screenshot-translateZ-bidi-chromium.png
+|   |           screenshot-translateZ-chromium.png
+|   |           screenshot-translateZ-firefox.png
+|   |           screenshot-translateZ-moz-firefox-nightly.png
+|   |           screenshot-translateZ-webkit.png
+|   |           screenshot-web-font-bidi-chromium.png
+|   |           screenshot-web-font-chromium.png
+|   |           screenshot-web-font-firefox.png
+|   |           screenshot-web-font-moz-firefox-nightly.png
+|   |           screenshot-web-font-webkit.png
+|   |           screenshot-webgl-bidi-chromium.png
+|   |           screenshot-webgl-chromium.png
+|   |           screenshot-webgl-firefox.png
+|   |           screenshot-webgl-moz-firefox-nightly.png
+|   |           screenshot-webgl-webkit.png
+|   |           should-capture-css-box-shadow-1-bidi-chromium.png
+|   |           should-capture-css-box-shadow-1-chromium.png
+|   |           should-capture-css-box-shadow-1-firefox.png
+|   |           should-capture-css-box-shadow-1-moz-firefox-nightly.png
+|   |           should-capture-css-box-shadow-1-webkit.png
+|   |           should-mask-in-parallel-1-bidi-chromium.png
+|   |           should-mask-in-parallel-1-chromium.png
+|   |           should-mask-in-parallel-1-firefox.png
+|   |           should-mask-in-parallel-1-moz-firefox-nightly.png
+|   |           should-mask-in-parallel-1-webkit.png
+|   |           should-mask-in-parallel-2-bidi-chromium.png
+|   |           should-mask-in-parallel-2-chromium.png
+|   |           should-mask-in-parallel-2-firefox.png
+|   |           should-mask-in-parallel-2-moz-firefox-nightly.png
+|   |           should-mask-in-parallel-2-webkit.png
+|   |           should-mask-inside-iframe-bidi-chromium.png
+|   |           should-mask-inside-iframe-chromium.png
+|   |           should-mask-inside-iframe-firefox.png
+|   |           should-mask-inside-iframe-moz-firefox-nightly.png
+|   |           should-mask-inside-iframe-webkit.png
+|   |           should-mask-multiple-elements-bidi-chromium.png
+|   |           should-mask-multiple-elements-chromium.png
+|   |           should-mask-multiple-elements-firefox.png
+|   |           should-mask-multiple-elements-moz-firefox-nightly.png
+|   |           should-mask-multiple-elements-webkit.png
+|   |           transparent-bidi-chromium.png
+|   |           transparent-chromium.png
+|   |           transparent-moz-firefox-nightly.png
+|   |           transparent-webkit.png
+|   |           white-bidi-chromium.jpg
+|   |           white-chromium.jpg
+|   |           white-firefox.jpg
+|   |           white-moz-firefox-nightly.jpg
+|   |           white-webkit.jpg
+|   |           
+|   +---playwright-test
+|   |   |   access-data.spec.ts
+|   |   |   aria-snapshot-file.spec.ts
+|   |   |   babel.spec.ts
+|   |   |   basic.spec.ts
+|   |   |   cache.spec.ts
+|   |   |   command-line-filter.spec.ts
+|   |   |   config.spec.ts
+|   |   |   decorators.spec.ts
+|   |   |   deps.spec.ts
+|   |   |   esm.spec.ts
+|   |   |   exit-code.spec.ts
+|   |   |   expect-configure.spec.ts
+|   |   |   expect-poll.spec.ts
+|   |   |   expect-soft.spec.ts
+|   |   |   expect-to-pass.spec.ts
+|   |   |   expect.spec.ts
+|   |   |   fit-to-width.spec.ts
+|   |   |   fixture-errors.spec.ts
+|   |   |   fixtures.spec.ts
+|   |   |   gitignore.spec.ts
+|   |   |   global-setup.spec.ts
+|   |   |   golden.spec.ts
+|   |   |   hooks.spec.ts
+|   |   |   list-mode.spec.ts
+|   |   |   loader.spec.ts
+|   |   |   match-grep.spec.ts
+|   |   |   max-failures.spec.ts
+|   |   |   only-changed.spec.ts
+|   |   |   override-timeout.spec.ts
+|   |   |   pause-at-end.spec.ts
+|   |   |   playwright-test-fixtures.ts
+|   |   |   playwright.artifacts.spec.ts
+|   |   |   playwright.config.spec.ts
+|   |   |   playwright.config.ts
+|   |   |   playwright.connect.spec.ts
+|   |   |   playwright.ct-build.spec.ts
+|   |   |   playwright.ct-dev-server.spec.ts
+|   |   |   playwright.ct-react.spec.ts
+|   |   |   playwright.fetch.spec.ts
+|   |   |   playwright.reuse.browser.spec.ts
+|   |   |   playwright.reuse.spec.ts
+|   |   |   playwright.spec.ts
+|   |   |   playwright.trace.spec.ts
+|   |   |   playwright.unhandled.spec.ts
+|   |   |   repeat-each.spec.ts
+|   |   |   reporter-attachment.spec.ts
+|   |   |   reporter-base.spec.ts
+|   |   |   reporter-blob.spec.ts
+|   |   |   reporter-dot.spec.ts
+|   |   |   reporter-github.spec.ts
+|   |   |   reporter-html.spec.ts
+|   |   |   reporter-json.spec.ts
+|   |   |   reporter-junit.spec.ts
+|   |   |   reporter-line.spec.ts
+|   |   |   reporter-list.spec.ts
+|   |   |   reporter-markdown.spec.ts
+|   |   |   reporter-onend.spec.ts
+|   |   |   reporter.spec.ts
+|   |   |   resolver.spec.ts
+|   |   |   retry.spec.ts
+|   |   |   runner.spec.ts
+|   |   |   shard.spec.ts
+|   |   |   snapshot-path-template.spec.ts
+|   |   |   stdio.spec.ts
+|   |   |   test-extend.spec.ts
+|   |   |   test-grep.spec.ts
+|   |   |   test-ignore.spec.ts
+|   |   |   test-info.spec.ts
+|   |   |   test-list.spec.ts
+|   |   |   test-modifiers.spec.ts
+|   |   |   test-output-dir.spec.ts
+|   |   |   test-parallel.spec.ts
+|   |   |   test-serial.spec.ts
+|   |   |   test-server.spec.ts
+|   |   |   test-step.spec.ts
+|   |   |   test-tag.spec.ts
+|   |   |   test-use.spec.ts
+|   |   |   timeout.spec.ts
+|   |   |   to-have-screenshot.spec.ts
+|   |   |   types-2.spec.ts
+|   |   |   types.spec.ts
+|   |   |   ui-mode-fixtures.ts
+|   |   |   ui-mode-metadata.spec.ts
+|   |   |   ui-mode-test-annotations.spec.ts
+|   |   |   ui-mode-test-attachments.spec.ts
+|   |   |   ui-mode-test-ct.spec.ts
+|   |   |   ui-mode-test-filters.spec.ts
+|   |   |   ui-mode-test-network-tab.spec.ts
+|   |   |   ui-mode-test-output.spec.ts
+|   |   |   ui-mode-test-progress.spec.ts
+|   |   |   ui-mode-test-run.spec.ts
+|   |   |   ui-mode-test-screencast.spec.ts
+|   |   |   ui-mode-test-setup.spec.ts
+|   |   |   ui-mode-test-shortcut.spec.ts
+|   |   |   ui-mode-test-source.spec.ts
+|   |   |   ui-mode-test-tree.spec.ts
+|   |   |   ui-mode-test-update.spec.ts
+|   |   |   ui-mode-test-watch.spec.ts
+|   |   |   ui-mode-trace.spec.ts
+|   |   |   update-aria-snapshot.spec.ts
+|   |   |   watch.spec.ts
+|   |   |   web-server.spec.ts
+|   |   |   worker-index.spec.ts
+|   |   |   
+|   |   +---assets
+|   |   |       screenshot-canvas-actual.png
+|   |   |       screenshot-canvas-expected.png
+|   |   |       simple-server-with-ready-route.js
+|   |   |       simple-server.js
+|   |   |       test.png
+|   |   |       
+|   |   +---stable-test-runner
+|   |   |       .gitignore
+|   |   |       index.d.ts
+|   |   |       index.js
+|   |   |       package-lock.json
+|   |   |       package.json
+|   |   |       README.md
+|   |   |       
+|   |   \---__screenshots__
+|   |       +---playwright.artifacts.spec.ts
+|   |       |       screenshot-grid-fullpage.png
+|   |       |       
+|   |       \---ui-mode-test-tree.spec.ts
+|   |               should-traverse-up-down-1.yml
+|   |               should-traverse-up-down-2.yml
+|   |               should-traverse-up-down-3.yml
+|   |               
+|   +---stress
+|   |       browsers.spec.ts
+|   |       contexts.spec.ts
+|   |       frames.spec.ts
+|   |       heap.spec.ts
+|   |       playwright.config.ts
+|   |       
+|   \---third_party
+|       \---proxy
+|               index.ts
+|               LICENSE
+|               README.md
+|               
+\---utils
+    |   avd_install.sh
+    |   avd_recreate.sh
+    |   avd_start.sh
+    |   avd_stop.sh
+    |   build_android_driver.sh
+    |   check_audit.js
+    |   check_deps.js
+    |   copyright.js
+    |   generate_channels.js
+    |   generate_chromium_default_font_families.js
+    |   generate_clip_paths.js
+    |   generate_dotnet_channels.js
+    |   generate_injected.js
+    |   generate_third_party_notice.js
+    |   kill_watch.sh
+    |   lint_tests.js
+    |   markdown.js
+    |   pack_package.js
+    |   print_versions.js
+    |   publish_all_packages.sh
+    |   render_release_notes.mjs
+    |   roll_browser.js
+    |   upload_flakiness_dashboard.sh
+    |   video_stress.js
+    |   workspace.js
+    |   
+    +---build
+    |       .gitignore
+    |       build-playwright-driver.sh
+    |       build.js
+    |       clean.js
+    |       deploy-trace-viewer.sh
+    |       update-playwright-node.mjs
+    |       update_canary_version.js
+    |       upload-playwright-driver.sh
+    |       
+    +---docker
+    |       .gitignore
+    |       build.sh
+    |       Dockerfile.jammy
+    |       Dockerfile.noble
+    |       publish_docker.sh
+    |       seccomp_profile.json
+    |       
+    +---doclint
+    |   |   api_parser.js
+    |   |   cli.js
+    |   |   documentation.js
+    |   |   dotnetXmlDocumentation.js
+    |   |   generateApiJson.js
+    |   |   generateDotnetApi.js
+    |   |   linkUtils.js
+    |   |   missingDocs.js
+    |   |   
+    |   +---linting-code-snippets
+    |   |   |   cli.js
+    |   |   |   
+    |   |   +---csharp
+    |   |   |       .gitignore
+    |   |   |       linting-code-snippets.csproj
+    |   |   |       Program.cs
+    |   |   |       
+    |   |   +---java
+    |   |   |   |   .gitignore
+    |   |   |   |   pom.xml
+    |   |   |   |   
+    |   |   |   \---src
+    |   |   |       \---main
+    |   |   |           \---java
+    |   |   |                   JavaSyntaxChecker.java
+    |   |   |                   
+    |   |   \---python
+    |   |           main.py
+    |   |           requirements.txt
+    |   |           
+    |   \---templates
+    |           interface.cs
+    |           
+    +---flakiness-dashboard
+    |   |   .gitignore
+    |   |   host.json
+    |   |   package-lock.json
+    |   |   package.json
+    |   |   README.md
+    |   |   
+    |   \---processing
+    |           compress_raw_data.js
+    |           dashboard_compressed_v1.js
+    |           dashboard_raw.js
+    |           function.json
+    |           index.js
+    |           utils.js
+    |           
+    +---generate_types
+    |   |   exported.json
+    |   |   index.js
+    |   |   overrides-test.d.ts
+    |   |   overrides-testReporter.d.ts
+    |   |   overrides.d.ts
+    |   |   parseOverrides.js
+    |   |   
+    |   \---test
+    |           test.ts
+    |           tsconfig.json
+    |           
+    +---linux-browser-dependencies
+    |   |   .gitignore
+    |   |   README.md
+    |   |   run.sh
+    |   |   
+    |   \---inside_docker
+    |           list_dependencies.js
+    |           process.sh
+    |           
+    \---protocol-types-generator
+            index.js
+            

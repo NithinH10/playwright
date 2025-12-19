@@ -1,0 +1,15 @@
+{
+  "name": "pw-trace-demo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:trace": "playwright test --trace on",
+    "show:report": "playwright show-report",
+    "show:trace": "playwright show-trace"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.57.0"
+  }
+}
+
