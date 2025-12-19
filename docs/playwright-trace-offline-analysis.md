@@ -259,6 +259,7 @@ test('electron app with tracing', async () => {
 ## Tauri Apps: Reality + Workable Paths
 
 Tauri applications use OS-native webviews:
+
 - **Windows**: WebView2 (Chromium-based)
 - **macOS**: WKWebView (WebKit-based)
 - **Linux**: WebKitGTK (WebKit-based)
@@ -270,12 +271,14 @@ Playwright trace files work best when Playwright is directly driving the browser
 **When to use**: When your Tauri app's UI is similar to a web version, or when you can run the same UI code in a browser.
 
 **Pros:**
+
 - Full Playwright trace support
 - Easier to set up and maintain
 - Works on all platforms
 - Better debugging experience
 
 **Cons:**
+
 - Doesn't test the actual Tauri app
 - May miss Tauri-specific issues
 
@@ -319,9 +322,7 @@ test('test UI in browser instead of Tauri', async ({ page, context }) => {
    # macOS/Linux (not applicable - WebView2 is Windows-only)
    export WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS="--remote-debugging-port=9222"
    ```
-
 2. **Launch your Tauri app** with the environment variable set.
-
 3. **Connect Playwright via CDP**:
 
    ```typescript
@@ -347,7 +348,6 @@ test('test UI in browser instead of Tauri', async ({ page, context }) => {
      await browser.close();
    });
    ```
-
 4. **For parallel runs**, use unique ports and user data folders:
 
    ```typescript
@@ -436,7 +436,6 @@ await context.tracing.stop({ path: 'trace.zip' });
      trace: 'retain-on-failure', // Only save on failures
    }
    ```
-
 2. **Disable screenshots**:
 
    ```typescript
@@ -445,7 +444,6 @@ await context.tracing.stop({ path: 'trace.zip' });
      screenshots: false, // Disable screenshots
    });
    ```
-
 3. **Limit trace to specific tests**:
 
    ```typescript
@@ -500,7 +498,6 @@ use: {
    echo $env:WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS
    # Should show: --remote-debugging-port=9222
    ```
-
 2. **Check if port is in use**:
 
    ```powershell
@@ -512,7 +509,6 @@ use: {
    # macOS/Linux
    lsof -i :9222
    ```
-
 3. **Use a different port**:
 
    ```typescript
@@ -520,7 +516,6 @@ use: {
    process.env.WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS = `--remote-debugging-port=${port}`;
    const browser = await chromium.connectOverCDP(`http://127.0.0.1:${port}`);
    ```
-
 4. **Wait for app to be ready**:
 
    ```typescript
@@ -546,7 +541,6 @@ use: {
    // Or wait for a specific window
    await electronApp.waitForEvent('window');
    ```
-
 2. **Check all windows**:
 
    ```typescript
@@ -554,7 +548,6 @@ use: {
    console.log(`Found ${windows.length} windows`);
    const window = windows[0];
    ```
-
 3. **Wait for app ready**:
 
    ```typescript
@@ -594,7 +587,7 @@ Use this checklist to ensure you're capturing and analyzing traces correctly:
 
 ### Before Running Tests
 
-- [ ] Enable tracing in `playwright.config.ts` or via CLI (`--trace` flag)
+- [X] Enable tracing in `playwright.config.ts` or via CLI (`--trace` flag)
 - [ ] Choose appropriate trace mode (`on`, `retain-on-failure`, or `on-first-retry`)
 - [ ] Configure output directory if needed
 
@@ -641,4 +634,3 @@ Use this checklist to ensure you're capturing and analyzing traces correctly:
 ---
 
 **Last Updated**: This guide covers Playwright trace file generation and offline analysis for browser, Electron, and Tauri applications.
-
